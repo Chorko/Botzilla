@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Botzilla Dynamic Pipeline Dashboard</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #0f172a;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .dashboard {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            width: 680px; /* Slight width expansion for cleaner structure layout */
+            text-align: center;
+        }
+
+        .btn {
+            background-color: #38bdf8;
+            color: #0f172a;
+            border: none;
+            padding: 12px 24px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-bottom: 20px;
+            transition: 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #7dd3fc;
+        }
+
+        .status-badge {
+            font-size: 14px;
+            margin-bottom: 20px;
+            color: #94a3b8;
+        }
+
+        .player-zone {
+            display: none;
+            position: relative;
+            margin-top: 10px;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 6px;
+        }
+
+        .timeline-track {
+            width: 100%;
+            height: 14px;
+            background-color: #475569;
+            margin-top: 12px;
+            border-radius: 7px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .preview-viewport {
+            position: absolute;
+            bottom: 28px;
+            left: 0;
+            /* 🌟 CHANGE 1: Expand UI container box bounds to display 640x360 snapshots */
+            width: 640px;
+            height: 360px;
+            border: 2px solid #38bdf8;
+            border-radius: 4px;
+            display: none;
+            pointer-events: none;
+            background-repeat: no-repeat;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+            z-index: 50; /* Ensure high layer order over video components */
+        }
+
+        .select-container {
+            margin-bottom: 25px;
+            text-align: left;
+            display: inline-block;
+            width: 100%;
+            max-width: 320px;
+        }
+
+        .select-label {
+            display: block;
+            font-size: 14px;
+            color: #94a3b8;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .select-input {
+            background-color: #0f172a;
+            color: white;
+            border: 2px solid #334155;
+            padding: 10px 16px;
+            border-radius: 6px;
+            font-size: 16px;
+            width: 100%;
+            cursor: pointer;
+            outline: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            box-sizing: border-box;
+        }
+
+        .select-input:hover {
+            border-color: #475569;
+        }
+
+        .select-input:focus {
+            border-color: #38bdf8;
+            box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.25);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="dashboard">
+        <h2>Botzilla Smart Visual Ingestion Pipeline</h2>
+
+        <div class="select-container">
+            <span class="select-label">Select Video Asset:</span>
+            <select class="select-input" id="videoSelect">
+                </select>
+        </div>
+
+        <button class="btn" id="startBtn">Process Video Asset</button>
+        <div class="status-badge" id="statusMessage">System Status: Loading available assets...</div>
+
+        <div class="player-zone" id="playerZone">
+            <video id="meetVideo" controls></video>
+            <div class="timeline-track" id="trackBar">
+                <div class="preview-viewport" id="hoverBox"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const startBtn = document.getElementById('startBtn');
+        const statusMessage = document.getElementById('statusMessage');
+        const playerZone = document.getElementById('playerZone');
+        const video = document.getElementById('meetVideo');
+        const trackBar = document.getElementById('trackBar');
+        const hoverBox = document.getElementById('hoverBox');
+        const videoSelect = document.getElementById('videoSelect');
+
+        let vttMap = [];
+        let selectedVideo = "";
+
+        async function loadVideos() {
+            try {
+                const res = await fetch('/videos');
+                const videos = await res.json();
+                videoSelect.innerHTML = "";
+
+                if (videos.length === 0) {
+                    statusMessage.innerHTML = "❌ No video files found in SourceVedio directory.";
+                    startBtn.disabled = true;
+                    return;
+                }
+
+                videos.forEach(vid => {
+                    const opt = document.createElement('option');
+                    opt.value = vid;
+                    opt.textContent = vid;
+                    videoSelect.appendChild(opt);
+                });
+
+                selectedVideo = videos[0];
+                onVideoChanged();
+            } catch (err) {
+                statusMessage.innerHTML = "❌ Error loading video list: " + err.message;
+            }
+        }
+
+        videoSelect.addEventListener('change', (e) => {
+            selectedVideo = e.target.value;
+            onVideoChanged();
+        });
+
+        async function onVideoChanged() {
+            playerZone.style.display = "none";
+            video.src = `/videos/${selectedVideo}`;
+            vttMap = [];
+            checkStatusLoop();
+        }
+
+        startBtn.addEventListener('click', async () => {
+            if (!selectedVideo) return;
+            startBtn.disabled = true;
+            await fetch(`/process-video/${selectedVideo}`, { method: 'POST' });
+            checkStatusLoop();
+        });
+
+        async function checkStatusLoop() {
+            if (!selectedVideo) return;
+
+            const res = await fetch(`/status/${selectedVideo}`);
+            const data = await res.json();
+
+            if (videoSelect.value !== selectedVideo) return;
+
+            if (data.status === "processing") {
+                statusMessage.innerHTML = `⚡ Pipeline Status: Processing ${selectedVideo}... please wait.`;
+                startBtn.style.display = "inline-block";
+                startBtn.disabled = true;
+                playerZone.style.display = "none";
+                setTimeout(checkStatusLoop, 2000);
+            } else if (data.status === "complete") {
+                statusMessage.innerHTML = `✅ Processing Complete! Hover along the timeline track bar below.`;
+                startBtn.style.display = "none";
+                initializePlayer(selectedVideo);
+            } else {
+                statusMessage.innerHTML = `System Status: Ready to process ${selectedVideo}`;
+                startBtn.style.display = "inline-block";
+                startBtn.disabled = false;
+                playerZone.style.display = "none";
+            }
+        }
+
+        async function initializePlayer(filename) {
+            const videoName = filename.substring(0, filename.lastIndexOf('.')) || filename;
+            playerZone.style.display = "block";
+
+            const response = await fetch(`${videoName}_timeline_map.vtt?t=${Date.now()}`);
+            const text = await response.text();
+
+            // 🌟 CHANGE 2: Request the high-fidelity .png grid instead of the old .jpg
+            hoverBox.style.backgroundImage = `url('${videoName}_grid.png?t=${Date.now()}')`;
+
+            vttMap = [];
+            const cleanText = text.replace(/\r\n/g, '\n').replace(/\r/g, '\n').trim();
+
+            cleanText.split('\n\n').forEach(block => {
+                if (block.includes('-->')) {
+                    const lines = block.split('\n').map(l => l.trim()).filter(Boolean);
+                    if (lines.length >= 2) {
+                        const times = lines[0].split(' --> ');
+                        const coordsMatch = lines[1].split('#xywh=');
+                        if (times.length === 2 && coordsMatch.length === 2) {
+                            const [x, y, w, h] = coordsMatch[1].split(',').map(Number);
+                            const convert = (str) => {
+                                const p = str.trim().split(':');
+                                return (parseInt(p[0], 10) * 3600) + (parseInt(p[1], 10) * 60) + parseFloat(p[2]);
+                            };
+                            vttMap.push({ start: convert(times[0]), end: convert(times[1]), x, y });
+                        }
+                    }
+                }
+            });
+        }
+
+        trackBar.addEventListener('mousemove', (e) => {
+            if (vttMap.length === 0) return;
+            hoverBox.style.display = 'block';
+
+            const pct = e.offsetX / trackBar.offsetWidth;
+            const targetTime = pct * video.duration;
+
+            // 🌟 CHANGE 3: Center the broader layout viewport precisely with a 320px offset (half of 640px)
+            let xPos = e.offsetX - 320;
+            xPos = Math.max(0, Math.min(xPos, trackBar.offsetWidth - 640));
+            hoverBox.style.left = `${xPos}px`;
+
+            const frameMatch = vttMap.find(f => targetTime >= f.start && targetTime <= f.end);
+            if (frameMatch) {
+                hoverBox.style.backgroundPosition = `-${frameMatch.x}px -${frameMatch.y}px`;
+            }
+        });
+
+        trackBar.addEventListener('mouseleave', () => hoverBox.style.display = 'none');
+        trackBar.addEventListener('click', (e) => {
+            video.currentTime = (e.offsetX / trackBar.offsetWidth) * video.duration;
+        });
+
+        loadVideos();
+    </script>
+</body>
+
+</html>
