@@ -104,7 +104,7 @@ async function startServer() {
   ]), async (req: Request, res: Response) => {
     try {
       const files = req.files as { [fieldname: string]: Express.Multer.File[] } || {};
-      const { mode, offset, whisperModel, language } = req.body;
+      const { mode } = req.body;
       
       const audioFile = files['audio']?.[0];
       const videoFile = files['video']?.[0];
@@ -115,7 +115,6 @@ async function startServer() {
       fs.mkdirSync(taskOutputDir, { recursive: true });
       fs.mkdirSync(path.join(taskOutputDir, 'slides'), { recursive: true });
       
-      console.log(`[Express Backend] Creating task ${taskId} in tasksMap...`);
       tasksMap.set(taskId, {
         taskId,
         stage: 'uploading',
@@ -126,125 +125,103 @@ async function startServer() {
         clients: []
       });
       
-      // Spawn python script run_botzilla_local.py
-      const args = [
-        'run_botzilla_local.py',
-        '--mode', mode || 'UNIFIED',
-        '--output-dir', taskOutputDir,
-        '--task-id', taskId,
-        '--gemini-key', process.env.GEMINI_API_KEY || '',
-        '--hf-token', process.env.HF_TOKEN || ''
-      ];
-      
-      if (audioFile) args.push('--audio', audioFile.path);
-      if (videoFile) args.push('--video', videoFile.path);
-      if (offset) args.push('--offset', offset);
-      if (whisperModel) args.push('--model', whisperModel);
-      if (language) args.push('--lang', language);
-      
-      console.log(`[Express Backend] Spawning run_botzilla_local.py with args:`, args);
-      const pythonProcess = spawn('python', args);
-      
-      pythonProcess.stdout.on('data', (chunk) => {
-        const text = chunk.toString();
-        console.log(`[Python stdout] ${text.trim()}`);
-        const lines = text.split('\n');
-        for (const line of lines) {
-          if (line.includes('[STATUS]')) {
-            const parts = line.split('[STATUS]')[1].trim().split(/\s+/);
-            if (parts.length >= 2) {
-              const stage = parts[0];
-              const progress = parseInt(parts[1], 10);
-              const message = parts.slice(2).join(' ');
-              
-              const task = tasksMap.get(taskId);
-              if (task) {
-                // If Python emits 'completed' stage, map it to 'finalizing' to prevent
-                // the frontend from prematurely closing the EventSource before the file data is read.
-                const sseStage = stage === 'completed' ? 'finalizing' : stage;
-                task.stage = sseStage;
-                task.progress = progress;
-                task.message = message;
-                sendSSE(taskId, { stage: sseStage, progress, message });
-              } else {
-                console.warn(`[Express Backend] Received stdout [STATUS] but task ${taskId} not found in tasksMap!`);
-              }
+      let pythonProcess;
+
+      // ---------------------------------------------------------
+      // THE HIJACK: If it's audio only, run MY G's custom engine
+      // ---------------------------------------------------------
+      if (mode === 'AUDIO_ONLY' && audioFile) {
+          console.log(`[Express] Hijacking route. Running custom Groq Audio Engine...`);
+          
+          const args = [
+            'audio_engine.py',
+            audioFile.path,
+            process.env.HF_TOKEN || '',
+            process.env.GROQ_API_KEY || '',
+            taskOutputDir
+          ];
+          
+          pythonProcess = spawn('python', args);
+          
+          pythonProcess.stdout.on('data', (chunk) => {
+            const lines = chunk.toString().split('\n');
+            for (const line of lines) {
+                console.log(`[Python] ${line.trim()}`);
+                if (line.includes('[STATUS]')) {
+                    const parts = line.split('[STATUS]')[1].trim().split(/\s+/);
+                    if (parts.length >= 2) {
+                        const stage = parts[0];
+                        const progress = parseInt(parts[1], 10);
+                        const message = parts.slice(2).join(' ');
+                        const task = tasksMap.get(taskId);
+                        if (task) {
+                            task.stage = stage;
+                            task.progress = progress;
+                            task.message = message;
+                            sendSSE(taskId, { stage, progress, message });
+                        }
+                    }
+                } else if (line.includes('[SUCCESS]')) {
+                    const docPath = line.replace('[SUCCESS]', '').trim();
+                    const task = tasksMap.get(taskId);
+                    if (task) {
+                        try {
+                            const jsonPath = path.join(taskOutputDir, 'report.json');
+                            const reportContent = fs.readFileSync(jsonPath, 'utf-8');
+                            const reportData = JSON.parse(reportContent);
+                            reportData.pdf_file = docPath; 
+                            
+                            task.stage = 'completed';
+                            task.progress = 100;
+                            task.message = 'Analysis completed successfully!';
+                            task.data = reportData;
+                            
+                            sendSSE(taskId, {
+                                stage: 'completed',
+                                progress: 100,
+                                message: 'Analysis completed successfully!',
+                                data: reportData
+                            });
+                        } catch(e) {
+                            console.error("[Express] Error reading report.json", e);
+                        }
+                    }
+                }
             }
-          }
-        }
-      });
-      
+          });
+      } 
+      // ---------------------------------------------------------
+      // THE FALLBACK: If it's a video, run the friend's script
+      // ---------------------------------------------------------
+      else {
+          console.log(`[Express] Video detected. Running original Botzilla pipeline...`);
+          const args = [
+            'run_botzilla_local.py',
+            '--mode', mode || 'UNIFIED',
+            '--output-dir', taskOutputDir,
+            '--task-id', taskId,
+            '--gemini-key', process.env.GEMINI_API_KEY || '',
+            '--hf-token', process.env.HF_TOKEN || ''
+          ];
+          if (audioFile) args.push('--audio', audioFile.path);
+          if (videoFile) args.push('--video', videoFile.path);
+          
+          pythonProcess = spawn('python', args);
+          
+          pythonProcess.stdout.on('data', (chunk) => {
+            // (Keep your friend's original stdout parsing logic here...)
+          });
+      }
+
       pythonProcess.stderr.on('data', (chunk) => {
         console.error(`[Python stderr]`, chunk.toString());
       });
-      
-      pythonProcess.on('close', (code) => {
-        console.log(`[Express Backend] Python process exited with code ${code} for task ${taskId}`);
-        const task = tasksMap.get(taskId);
-        if (!task) {
-          console.warn(`[Express Backend] Python process close: task ${taskId} not found in tasksMap! Current keys:`, Array.from(tasksMap.keys()));
-          return;
-        }
-        
-        if (code === 0) {
-          try {
-            const jsonPath = path.join(taskOutputDir, 'report.json');
-            if (fs.existsSync(jsonPath)) {
-              console.log(`[Express Backend] Reading completed report from: ${jsonPath}`);
-              const reportContent = fs.readFileSync(jsonPath, 'utf-8');
-              const reportData = JSON.parse(reportContent);
-              
-              task.stage = 'completed';
-              task.progress = 100;
-              task.message = 'Analysis completed successfully!';
-              task.data = reportData;
-              
-              sendSSE(taskId, {
-                stage: 'completed',
-                progress: 100,
-                message: 'Analysis completed successfully!',
-                data: reportData
-              });
-            } else {
-              throw new Error("report.json file not created by Python pipeline.");
-            }
-          } catch (err: any) {
-            console.error(`[Express Backend] Error parsing JSON report:`, err);
-            task.stage = 'error';
-            task.progress = 100;
-            task.error = err.message;
-            sendSSE(taskId, {
-              stage: 'error',
-              progress: 100,
-              message: `Summarization error: ${err.message}`
-            });
-          }
-        } else {
-          task.stage = 'error';
-          task.progress = 100;
-          task.error = `Python pipeline exited with non-zero exit code: ${code}`;
-          sendSSE(taskId, {
-            stage: 'error',
-            progress: 100,
-            message: `Pipeline processing failed (Exit Code ${code})`
-          });
-        }
-        
-        // Clean up temporary uploads
-        try {
-          if (audioFile && fs.existsSync(audioFile.path)) fs.unlinkSync(audioFile.path);
-          if (videoFile && fs.existsSync(videoFile.path)) fs.unlinkSync(videoFile.path);
-        } catch (cleanupErr) {
-          console.error(`Failed to clean up upload files:`, cleanupErr);
-        }
-      });
-      
-      // Return taskId immediately
+
       res.json({ taskId });
       
     } catch (err: any) {
       console.error(err);
-      res.status(500).json({ error: err.message || "Failed to start meeting processing." });
+      res.status(500).json({ error: err.message || "Failed to start processing." });
     }
   });
 
@@ -795,7 +772,53 @@ The conversational session logged ${totalConversations} statements from particip
       res.status(500).json({ error: docxError.message || "Failed to generate Word document." });
     }
   });
+  //_---------------------------------------------------------------------
 
+  app.post("/api/process-audio", upload.single('audio'), (req: Request, res: Response) => {
+    const audioFilePath= req.file?.path || "";
+    const hfToken= process.env.HF_TOKEN || "";
+    const groqKey= process.env.GROQ_API_KEY || "";
+    
+    res.setHeader('Content-Type', 'text/event-stream');
+    res.setHeader('Cache-Control', 'no-cache');
+    res.setHeader('Connection', 'keep-alive');
+    res.flushHeaders();
+    
+    const new_= spawn('python', [ 'audio_engine.py', audioFilePath, hfToken, groqKey ]);
+    
+    new_.stdout.on('data', (data) => {
+        const arr= data.toString().split('\n');
+        for (const line of arr) {
+            if (line.trim().startsWith('[STATUS]')) {
+                res.write(`data: ${JSON.stringify({ status: line.trim() })}\n\n`);
+            } else if (line.trim().startsWith('[SUCCESS]')) {
+                const res_= line.replace('[SUCCESS]', '').trim();
+                res.write(`data: ${JSON.stringify({ complete: true, downloadUrl: res_ })}\n\n`);
+            }
+        }
+    });
+    
+    new_.stderr.on('data', (data) => {
+        res.write(`data: ${JSON.stringify({ error: data.toString() })}\n\n`);
+    });
+    
+    new_.on('close', (code) => {
+        res.end();
+    });
+});
+
+app.get("/botzilla/download/:filename", (req: Request, res: Response) => {
+    const new_= req.params.filename;
+    const res_= path.join(process.cwd(), new_);
+    if (fs.existsSync(res_)) {
+        res.download(res_);
+    } else {
+        res.status(404).json({ error: "File not found" });
+    }
+});
+
+
+//_---------------------------------------------------------------------
   // Serve Vite app in dev mode, static files in production mode
   if (process.env.NODE_ENV !== "production") {
     console.log("[Node] Launching Server-side development middleware router");

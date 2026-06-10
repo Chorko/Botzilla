@@ -357,6 +357,17 @@ export default function App() {
     setProcessingState({ stage: 'idle', progress: 0, message: '' });
   };
 
+  const StatusTracker = () => (
+    <div className="flex flex-col items-end text-right text-[10px] text-slate-500">
+      <span className="font-semibold text-slate-700 uppercase tracking-[0.12em]">
+        {processingState.stage === 'idle' ? 'Idle' : processingState.stage === 'error' ? 'Error' : 'Processing'}
+      </span>
+      {processingState.message && (
+        <span className="mt-0.5 text-[9px]">{processingState.message}</span>
+      )}
+    </div>
+  );
+
   const isProcessing = ['uploading', 'vad', 'transcribing_diarizing', 'resolving_names', 'summarizing'].includes(processingState.stage);
 
   const canStart =
@@ -378,7 +389,9 @@ export default function App() {
               <p className="text-[9px] text-slate-400 font-medium uppercase tracking-wider">WhisperX · Pyannote · Gemini AI</p>
             </div>
           </div>
-
+<div>
+            <StatusTracker />
+        </div>
           <div className="flex items-center gap-2">
             <button onClick={handlePreloadDemo} className="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg text-xs font-semibold cursor-pointer transition-all border border-slate-200 flex items-center gap-1.5">
               <Zap className="w-3 h-3 text-amber-500" />
