@@ -1,0 +1,28 @@
+{
+  "segments": [
+    {
+      "start": 0.5,
+      "end": 8.0,
+      "speaker": "Speaker 1",
+      "text": "Hello everyone. Welcome to our synthetic meeting. Today we're going to cover four main topics, starting with the introduction."
+    },
+    {
+      "start": 10.5,
+      "end": 18.0,
+      "speaker": "Speaker 2",
+      "text": "Thanks Speaker 1. If we look at the architecture here, you can see it's quite robust and scalable."
+    },
+    {
+      "start": 21.0,
+      "end": 28.0,
+      "speaker": "Speaker 1",
+      "text": "Exactly. And for the implementation, we'll be using Python and Node.js to glue everything together."
+    },
+    {
+      "start": 31.0,
+      "end": 39.0,
+      "speaker": "Speaker 2",
+      "text": "That concludes our presentation. Let me know if there are any questions."
+    }
+  ]
+}

@@ -1,0 +1,3041 @@
+{
+  "meta": {
+    "title": "Meeting Summary",
+    "duration": "1 hour 30 minutes",
+    "participants": "Unknown",
+    "language": "Hinglish",
+    "slides": "null",
+    "mode": "UNIFIED",
+    "source": "test3.mp4"
+  },
+  "exec_summary": "The meeting discussed the concept of a standard, with the participants exploring its meaning and relevance. The core problem being solved was the need to understand and define a standard. The key solution features included a discussion on the trophy system and its impact on the top division. The outcomes of the meeting were unclear, but it seemed to be a discussion-based meeting.",
+  "key_topics": [
+    {
+      "title": "Defining a Standard",
+      "body": "The meeting began with a discussion on the concept of a standard, with the participants exploring its meaning and relevance. The core problem being solved was the need to understand and define a standard."
+    },
+    {
+      "title": "Trophy System",
+      "body": "The trophy system was discussed, with the participants exploring its impact on the top division. It was noted that the system was strong and had a positive effect on the division."
+    },
+    {
+      "title": "Theory of Product",
+      "body": "The theory of product was discussed, with the participants exploring its relevance to the meeting's topic. The concept of three trillion was mentioned, but its significance was unclear."
+    },
+    {
+      "title": "Distance Calculation",
+      "body": "The participants discussed the calculation of distance between two numbers, with one being three trillion and the other being 17 million."
+    }
+  ],
+  "speakers": [
+    {
+      "name": "Rahul",
+      "duration": "1 hour 30 minutes",
+      "pct": "100%",
+      "words": "1234"
+    }
+  ],
+  "utterances": [
+    {
+      "speaker": "Rahul",
+      "start": "00:00:00",
+      "end": "00:00:10",
+      "text": "Thank you.",
+      "slide_timestamp": "00:00:00"
+    },
+    {
+      "speaker": "Rahul",
+      "start": "00:00:10",
+      "end": "00:00:20",
+      "text": "So, now we are discussing what are we as a standard, which is a standard.",
+      "slide_timestamp": "00:00:10"
+    },
+    {
+      "speaker": "Rahul",
+      "start": "00:00:20",
+      "end": "00:00:30",
+      "text": "So, what is a standard?",
+      "slide_timestamp": "00:00:20"
+    },
+    {
+      "speaker": "Rahul",
+      "start": "00:00:30",
+      "end": "00:00:40",
+      "text": "Yeah.",
+      "slide_timestamp": "00:00:30"
+    },
+    {
+      "speaker": "Rahul",
+      "start": "00:00:40",
+      "end": "00:00:50",
+      "text": "So on this club, we are seeing that the topers shooting at some guy who's famous, Yani so first, I am, I forgot to say the dark screen.",
+      "slide_timestamp": "00:00:40"
+    },
+    {
+      "speaker": "Rahul",
+      "start": "00:00:50",
+      "end": "00:01:00",
+      "text": "It's happening in a dark, and of course, it's around 65 or 45, and he needs to take both of them.",
+      "slide_timestamp": "00:00:50"
+    },
+    {
+      "speaker": "Rahul",
+      "start": "00:01:00",
+      "end": "00:01:10",
+      "text": "And you have, you be in no house care for the name.",
+      "slide_timestamp": "00:01:00"
+    },
+    {
+      "speaker": "Rahul",
+      "start": "00:01:10",
+      "end": "00:01:20",
+      "text": "And then you're going to talk about trophies, it's going to be very bad.",
+      "slide_timestamp": "00:01:10"
+    },
+    {
+      "speaker": "Rahul",
+      "start": "00:01:20",
+      "end": "00:01:30",
+      "text": "And the trophy system was here, we was about it.",
+      "slide_timestamp": "00:01:20"
+    },
+    {
+      "speaker": "Rahul",
+      "start": "00:01:30",
+      "end": "00:01:40",
+      "text": "So it's very strong hand, like part of the top division.",
+      "slide_timestamp": "00:01:30"
+    },
+    {
+      "speaker": "Rahul",
+      "start": "00:01:40",
+      "end": "00:01:50",
+      "text": "But it was pretty good to keep the negative effects off.",
+      "slide_timestamp": "00:01:40"
+    },
+    {
+      "speaker": "Rahul",
+      "start": "00:01:50",
+      "end": "00:02:00",
+      "text": "So it was like earnings, the goals are done.",
+      "slide_timestamp": "00:01:50"
+    }
+  ],
+  "slides": [
+    {
+      "id": "slide_0",
+      "timestamp": 0.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_0.png"
+    },
+    {
+      "id": "slide_0",
+      "timestamp": 0.466,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_0.png"
+    },
+    {
+      "id": "slide_2",
+      "timestamp": 2.1,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_2.png"
+    },
+    {
+      "id": "slide_2",
+      "timestamp": 2.433,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_2.png"
+    },
+    {
+      "id": "slide_2",
+      "timestamp": 2.533,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_2.png"
+    },
+    {
+      "id": "slide_2",
+      "timestamp": 2.6,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_2.png"
+    },
+    {
+      "id": "slide_3",
+      "timestamp": 3.066,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_3.png"
+    },
+    {
+      "id": "slide_4",
+      "timestamp": 4.733,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_4.png"
+    },
+    {
+      "id": "slide_4",
+      "timestamp": 4.833,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_4.png"
+    },
+    {
+      "id": "slide_5",
+      "timestamp": 5.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_5.png"
+    },
+    {
+      "id": "slide_5",
+      "timestamp": 5.099,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_5.png"
+    },
+    {
+      "id": "slide_5",
+      "timestamp": 5.266,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_5.png"
+    },
+    {
+      "id": "slide_5",
+      "timestamp": 5.5,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_5.png"
+    },
+    {
+      "id": "slide_5",
+      "timestamp": 5.966,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_5.png"
+    },
+    {
+      "id": "slide_6",
+      "timestamp": 6.033,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_6.png"
+    },
+    {
+      "id": "slide_6",
+      "timestamp": 6.099,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_6.png"
+    },
+    {
+      "id": "slide_6",
+      "timestamp": 6.266,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_6.png"
+    },
+    {
+      "id": "slide_6",
+      "timestamp": 6.433,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_6.png"
+    },
+    {
+      "id": "slide_6",
+      "timestamp": 6.466,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_6.png"
+    },
+    {
+      "id": "slide_6",
+      "timestamp": 6.599,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_6.png"
+    },
+    {
+      "id": "slide_7",
+      "timestamp": 7.666,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_7.png"
+    },
+    {
+      "id": "slide_7",
+      "timestamp": 7.799,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_7.png"
+    },
+    {
+      "id": "slide_7",
+      "timestamp": 7.966,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_7.png"
+    },
+    {
+      "id": "slide_8",
+      "timestamp": 8.333,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_8.png"
+    },
+    {
+      "id": "slide_8",
+      "timestamp": 8.733,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_8.png"
+    },
+    {
+      "id": "slide_8",
+      "timestamp": 8.866,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_8.png"
+    },
+    {
+      "id": "slide_9",
+      "timestamp": 9.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_9.png"
+    },
+    {
+      "id": "slide_9",
+      "timestamp": 9.666,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_9.png"
+    },
+    {
+      "id": "slide_10",
+      "timestamp": 10.199,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_10.png"
+    },
+    {
+      "id": "slide_10",
+      "timestamp": 10.333,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_10.png"
+    },
+    {
+      "id": "slide_10",
+      "timestamp": 10.4,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_10.png"
+    },
+    {
+      "id": "slide_10",
+      "timestamp": 10.466,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_10.png"
+    },
+    {
+      "id": "slide_10",
+      "timestamp": 10.599,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_10.png"
+    },
+    {
+      "id": "slide_10",
+      "timestamp": 10.666,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_10.png"
+    },
+    {
+      "id": "slide_10",
+      "timestamp": 10.733,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_10.png"
+    },
+    {
+      "id": "slide_10",
+      "timestamp": 10.833,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_10.png"
+    },
+    {
+      "id": "slide_11",
+      "timestamp": 11.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_11.png"
+    },
+    {
+      "id": "slide_11",
+      "timestamp": 11.099,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_11.png"
+    },
+    {
+      "id": "slide_11",
+      "timestamp": 11.199,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_11.png"
+    },
+    {
+      "id": "slide_11",
+      "timestamp": 11.366,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_11.png"
+    },
+    {
+      "id": "slide_11",
+      "timestamp": 11.433,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_11.png"
+    },
+    {
+      "id": "slide_11",
+      "timestamp": 11.5,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_11.png"
+    },
+    {
+      "id": "slide_11",
+      "timestamp": 11.633,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_11.png"
+    },
+    {
+      "id": "slide_11",
+      "timestamp": 11.699,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_11.png"
+    },
+    {
+      "id": "slide_11",
+      "timestamp": 11.766,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_11.png"
+    },
+    {
+      "id": "slide_11",
+      "timestamp": 11.833,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_11.png"
+    },
+    {
+      "id": "slide_11",
+      "timestamp": 11.9,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_11.png"
+    },
+    {
+      "id": "slide_11",
+      "timestamp": 11.966,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_11.png"
+    },
+    {
+      "id": "slide_12",
+      "timestamp": 12.033,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_12.png"
+    },
+    {
+      "id": "slide_12",
+      "timestamp": 12.133,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_12.png"
+    },
+    {
+      "id": "slide_12",
+      "timestamp": 12.199,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_12.png"
+    },
+    {
+      "id": "slide_12",
+      "timestamp": 12.266,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_12.png"
+    },
+    {
+      "id": "slide_12",
+      "timestamp": 12.333,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_12.png"
+    },
+    {
+      "id": "slide_12",
+      "timestamp": 12.433,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_12.png"
+    },
+    {
+      "id": "slide_12",
+      "timestamp": 12.5,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_12.png"
+    },
+    {
+      "id": "slide_12",
+      "timestamp": 12.566,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_12.png"
+    },
+    {
+      "id": "slide_12",
+      "timestamp": 12.633,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_12.png"
+    },
+    {
+      "id": "slide_12",
+      "timestamp": 12.699,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_12.png"
+    },
+    {
+      "id": "slide_12",
+      "timestamp": 12.8,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_12.png"
+    },
+    {
+      "id": "slide_12",
+      "timestamp": 12.9,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_12.png"
+    },
+    {
+      "id": "slide_12",
+      "timestamp": 12.966,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_12.png"
+    },
+    {
+      "id": "slide_13",
+      "timestamp": 13.866,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_13.png"
+    },
+    {
+      "id": "slide_14",
+      "timestamp": 14.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_14.png"
+    },
+    {
+      "id": "slide_14",
+      "timestamp": 14.066,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_14.png"
+    },
+    {
+      "id": "slide_14",
+      "timestamp": 14.133,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_14.png"
+    },
+    {
+      "id": "slide_14",
+      "timestamp": 14.199,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_14.png"
+    },
+    {
+      "id": "slide_14",
+      "timestamp": 14.266,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_14.png"
+    },
+    {
+      "id": "slide_14",
+      "timestamp": 14.333,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_14.png"
+    },
+    {
+      "id": "slide_14",
+      "timestamp": 14.4,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_14.png"
+    },
+    {
+      "id": "slide_14",
+      "timestamp": 14.5,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_14.png"
+    },
+    {
+      "id": "slide_14",
+      "timestamp": 14.599,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_14.png"
+    },
+    {
+      "id": "slide_14",
+      "timestamp": 14.699,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_14.png"
+    },
+    {
+      "id": "slide_14",
+      "timestamp": 14.866,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_14.png"
+    },
+    {
+      "id": "slide_14",
+      "timestamp": 14.966,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_14.png"
+    },
+    {
+      "id": "slide_15",
+      "timestamp": 15.133,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_15.png"
+    },
+    {
+      "id": "slide_15",
+      "timestamp": 15.199,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_15.png"
+    },
+    {
+      "id": "slide_15",
+      "timestamp": 15.266,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_15.png"
+    },
+    {
+      "id": "slide_15",
+      "timestamp": 15.366,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_15.png"
+    },
+    {
+      "id": "slide_15",
+      "timestamp": 15.699,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_15.png"
+    },
+    {
+      "id": "slide_15",
+      "timestamp": 15.8,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_15.png"
+    },
+    {
+      "id": "slide_15",
+      "timestamp": 15.866,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_15.png"
+    },
+    {
+      "id": "slide_15",
+      "timestamp": 15.933,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_15.png"
+    },
+    {
+      "id": "slide_16",
+      "timestamp": 16.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_16.png"
+    },
+    {
+      "id": "slide_16",
+      "timestamp": 16.266,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_16.png"
+    },
+    {
+      "id": "slide_16",
+      "timestamp": 16.433,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_16.png"
+    },
+    {
+      "id": "slide_16",
+      "timestamp": 16.5,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_16.png"
+    },
+    {
+      "id": "slide_16",
+      "timestamp": 16.633,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_16.png"
+    },
+    {
+      "id": "slide_21",
+      "timestamp": 21.633,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_21.png"
+    },
+    {
+      "id": "slide_23",
+      "timestamp": 23.033,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_23.png"
+    },
+    {
+      "id": "slide_23",
+      "timestamp": 23.1,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_23.png"
+    },
+    {
+      "id": "slide_23",
+      "timestamp": 23.833,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_23.png"
+    },
+    {
+      "id": "slide_23",
+      "timestamp": 23.933,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_23.png"
+    },
+    {
+      "id": "slide_24",
+      "timestamp": 24.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_24.png"
+    },
+    {
+      "id": "slide_24",
+      "timestamp": 24.166,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_24.png"
+    },
+    {
+      "id": "slide_24",
+      "timestamp": 24.233,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_24.png"
+    },
+    {
+      "id": "slide_24",
+      "timestamp": 24.3,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_24.png"
+    },
+    {
+      "id": "slide_24",
+      "timestamp": 24.399,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_24.png"
+    },
+    {
+      "id": "slide_24",
+      "timestamp": 24.466,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_24.png"
+    },
+    {
+      "id": "slide_24",
+      "timestamp": 24.566,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_24.png"
+    },
+    {
+      "id": "slide_24",
+      "timestamp": 24.633,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_24.png"
+    },
+    {
+      "id": "slide_24",
+      "timestamp": 24.699,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_24.png"
+    },
+    {
+      "id": "slide_24",
+      "timestamp": 24.766,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_24.png"
+    },
+    {
+      "id": "slide_24",
+      "timestamp": 24.833,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_24.png"
+    },
+    {
+      "id": "slide_25",
+      "timestamp": 25.166,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_25.png"
+    },
+    {
+      "id": "slide_25",
+      "timestamp": 25.266,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_25.png"
+    },
+    {
+      "id": "slide_25",
+      "timestamp": 25.399,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_25.png"
+    },
+    {
+      "id": "slide_25",
+      "timestamp": 25.5,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_25.png"
+    },
+    {
+      "id": "slide_25",
+      "timestamp": 25.633,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_25.png"
+    },
+    {
+      "id": "slide_25",
+      "timestamp": 25.699,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_25.png"
+    },
+    {
+      "id": "slide_25",
+      "timestamp": 25.833,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_25.png"
+    },
+    {
+      "id": "slide_25",
+      "timestamp": 25.899,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_25.png"
+    },
+    {
+      "id": "slide_26",
+      "timestamp": 26.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_26.png"
+    },
+    {
+      "id": "slide_26",
+      "timestamp": 26.066,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_26.png"
+    },
+    {
+      "id": "slide_26",
+      "timestamp": 26.133,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_26.png"
+    },
+    {
+      "id": "slide_26",
+      "timestamp": 26.199,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_26.png"
+    },
+    {
+      "id": "slide_26",
+      "timestamp": 26.266,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_26.png"
+    },
+    {
+      "id": "slide_26",
+      "timestamp": 26.433,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_26.png"
+    },
+    {
+      "id": "slide_26",
+      "timestamp": 26.5,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_26.png"
+    },
+    {
+      "id": "slide_26",
+      "timestamp": 26.566,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_26.png"
+    },
+    {
+      "id": "slide_26",
+      "timestamp": 26.633,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_26.png"
+    },
+    {
+      "id": "slide_26",
+      "timestamp": 26.699,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_26.png"
+    },
+    {
+      "id": "slide_26",
+      "timestamp": 26.8,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_26.png"
+    },
+    {
+      "id": "slide_27",
+      "timestamp": 27.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_27.png"
+    },
+    {
+      "id": "slide_27",
+      "timestamp": 27.066,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_27.png"
+    },
+    {
+      "id": "slide_27",
+      "timestamp": 27.133,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_27.png"
+    },
+    {
+      "id": "slide_27",
+      "timestamp": 27.199,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_27.png"
+    },
+    {
+      "id": "slide_27",
+      "timestamp": 27.266,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_27.png"
+    },
+    {
+      "id": "slide_27",
+      "timestamp": 27.399,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_27.png"
+    },
+    {
+      "id": "slide_27",
+      "timestamp": 27.5,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_27.png"
+    },
+    {
+      "id": "slide_27",
+      "timestamp": 27.566,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_27.png"
+    },
+    {
+      "id": "slide_27",
+      "timestamp": 27.666,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_27.png"
+    },
+    {
+      "id": "slide_27",
+      "timestamp": 27.733,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_27.png"
+    },
+    {
+      "id": "slide_27",
+      "timestamp": 27.8,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_27.png"
+    },
+    {
+      "id": "slide_27",
+      "timestamp": 27.866,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_27.png"
+    },
+    {
+      "id": "slide_28",
+      "timestamp": 28.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_28.png"
+    },
+    {
+      "id": "slide_28",
+      "timestamp": 28.066,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_28.png"
+    },
+    {
+      "id": "slide_28",
+      "timestamp": 28.133,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_28.png"
+    },
+    {
+      "id": "slide_30",
+      "timestamp": 30.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_30.png"
+    },
+    {
+      "id": "slide_30",
+      "timestamp": 30.133,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_30.png"
+    },
+    {
+      "id": "slide_30",
+      "timestamp": 30.166,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_30.png"
+    },
+    {
+      "id": "slide_31",
+      "timestamp": 31.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_31.png"
+    },
+    {
+      "id": "slide_31",
+      "timestamp": 31.233,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_31.png"
+    },
+    {
+      "id": "slide_31",
+      "timestamp": 31.3,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_31.png"
+    },
+    {
+      "id": "slide_31",
+      "timestamp": 31.466,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_31.png"
+    },
+    {
+      "id": "slide_31",
+      "timestamp": 31.533,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_31.png"
+    },
+    {
+      "id": "slide_31",
+      "timestamp": 31.6,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_31.png"
+    },
+    {
+      "id": "slide_31",
+      "timestamp": 31.666,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_31.png"
+    },
+    {
+      "id": "slide_33",
+      "timestamp": 33.6,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_33.png"
+    },
+    {
+      "id": "slide_33",
+      "timestamp": 33.7,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_33.png"
+    },
+    {
+      "id": "slide_33",
+      "timestamp": 33.766,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_33.png"
+    },
+    {
+      "id": "slide_33",
+      "timestamp": 33.899,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_33.png"
+    },
+    {
+      "id": "slide_33",
+      "timestamp": 33.966,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_33.png"
+    },
+    {
+      "id": "slide_34",
+      "timestamp": 34.033,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_34.png"
+    },
+    {
+      "id": "slide_34",
+      "timestamp": 34.299,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_34.png"
+    },
+    {
+      "id": "slide_34",
+      "timestamp": 34.933,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_34.png"
+    },
+    {
+      "id": "slide_35",
+      "timestamp": 35.1,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_35.png"
+    },
+    {
+      "id": "slide_35",
+      "timestamp": 35.166,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_35.png"
+    },
+    {
+      "id": "slide_35",
+      "timestamp": 35.233,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_35.png"
+    },
+    {
+      "id": "slide_35",
+      "timestamp": 35.466,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_35.png"
+    },
+    {
+      "id": "slide_35",
+      "timestamp": 35.6,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_35.png"
+    },
+    {
+      "id": "slide_35",
+      "timestamp": 35.666,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_35.png"
+    },
+    {
+      "id": "slide_35",
+      "timestamp": 35.766,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_35.png"
+    },
+    {
+      "id": "slide_35",
+      "timestamp": 35.833,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_35.png"
+    },
+    {
+      "id": "slide_35",
+      "timestamp": 35.933,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_35.png"
+    },
+    {
+      "id": "slide_36",
+      "timestamp": 36.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_36.png"
+    },
+    {
+      "id": "slide_36",
+      "timestamp": 36.066,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_36.png"
+    },
+    {
+      "id": "slide_36",
+      "timestamp": 36.433,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_36.png"
+    },
+    {
+      "id": "slide_36",
+      "timestamp": 36.533,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_36.png"
+    },
+    {
+      "id": "slide_36",
+      "timestamp": 36.6,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_36.png"
+    },
+    {
+      "id": "slide_36",
+      "timestamp": 36.666,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_36.png"
+    },
+    {
+      "id": "slide_36",
+      "timestamp": 36.733,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_36.png"
+    },
+    {
+      "id": "slide_36",
+      "timestamp": 36.799,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_36.png"
+    },
+    {
+      "id": "slide_36",
+      "timestamp": 36.866,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_36.png"
+    },
+    {
+      "id": "slide_36",
+      "timestamp": 36.933,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_36.png"
+    },
+    {
+      "id": "slide_37",
+      "timestamp": 37.066,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_37.png"
+    },
+    {
+      "id": "slide_37",
+      "timestamp": 37.133,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_37.png"
+    },
+    {
+      "id": "slide_37",
+      "timestamp": 37.2,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_37.png"
+    },
+    {
+      "id": "slide_37",
+      "timestamp": 37.299,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_37.png"
+    },
+    {
+      "id": "slide_37",
+      "timestamp": 37.466,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_37.png"
+    },
+    {
+      "id": "slide_37",
+      "timestamp": 37.533,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_37.png"
+    },
+    {
+      "id": "slide_37",
+      "timestamp": 37.733,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_37.png"
+    },
+    {
+      "id": "slide_37",
+      "timestamp": 37.799,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_37.png"
+    },
+    {
+      "id": "slide_37",
+      "timestamp": 37.933,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_37.png"
+    },
+    {
+      "id": "slide_38",
+      "timestamp": 38.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_38.png"
+    },
+    {
+      "id": "slide_38",
+      "timestamp": 38.1,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_38.png"
+    },
+    {
+      "id": "slide_38",
+      "timestamp": 38.266,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_38.png"
+    },
+    {
+      "id": "slide_38",
+      "timestamp": 38.399,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_38.png"
+    },
+    {
+      "id": "slide_38",
+      "timestamp": 38.866,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_38.png"
+    },
+    {
+      "id": "slide_39",
+      "timestamp": 39.033,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_39.png"
+    },
+    {
+      "id": "slide_39",
+      "timestamp": 39.1,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_39.png"
+    },
+    {
+      "id": "slide_39",
+      "timestamp": 39.233,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_39.png"
+    },
+    {
+      "id": "slide_39",
+      "timestamp": 39.333,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_39.png"
+    },
+    {
+      "id": "slide_39",
+      "timestamp": 39.399,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_39.png"
+    },
+    {
+      "id": "slide_39",
+      "timestamp": 39.533,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_39.png"
+    },
+    {
+      "id": "slide_39",
+      "timestamp": 39.6,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_39.png"
+    },
+    {
+      "id": "slide_39",
+      "timestamp": 39.666,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_39.png"
+    },
+    {
+      "id": "slide_40",
+      "timestamp": 40.133,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_40.png"
+    },
+    {
+      "id": "slide_40",
+      "timestamp": 40.2,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_40.png"
+    },
+    {
+      "id": "slide_40",
+      "timestamp": 40.299,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_40.png"
+    },
+    {
+      "id": "slide_40",
+      "timestamp": 40.466,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_40.png"
+    },
+    {
+      "id": "slide_41",
+      "timestamp": 41.333,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_41.png"
+    },
+    {
+      "id": "slide_41",
+      "timestamp": 41.5,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_41.png"
+    },
+    {
+      "id": "slide_41",
+      "timestamp": 41.566,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_41.png"
+    },
+    {
+      "id": "slide_41",
+      "timestamp": 41.666,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_41.png"
+    },
+    {
+      "id": "slide_41",
+      "timestamp": 41.766,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_41.png"
+    },
+    {
+      "id": "slide_41",
+      "timestamp": 41.899,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_41.png"
+    },
+    {
+      "id": "slide_42",
+      "timestamp": 42.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_42.png"
+    },
+    {
+      "id": "slide_42",
+      "timestamp": 42.1,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_42.png"
+    },
+    {
+      "id": "slide_42",
+      "timestamp": 42.166,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_42.png"
+    },
+    {
+      "id": "slide_42",
+      "timestamp": 42.299,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_42.png"
+    },
+    {
+      "id": "slide_42",
+      "timestamp": 42.366,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_42.png"
+    },
+    {
+      "id": "slide_42",
+      "timestamp": 42.5,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_42.png"
+    },
+    {
+      "id": "slide_42",
+      "timestamp": 42.6,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_42.png"
+    },
+    {
+      "id": "slide_47",
+      "timestamp": 47.6,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_47.png"
+    },
+    {
+      "id": "slide_52",
+      "timestamp": 52.6,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_52.png"
+    },
+    {
+      "id": "slide_57",
+      "timestamp": 57.6,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_57.png"
+    },
+    {
+      "id": "slide_58",
+      "timestamp": 58.566,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_58.png"
+    },
+    {
+      "id": "slide_59",
+      "timestamp": 59.133,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_59.png"
+    },
+    {
+      "id": "slide_59",
+      "timestamp": 59.2,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_59.png"
+    },
+    {
+      "id": "slide_59",
+      "timestamp": 59.299,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_59.png"
+    },
+    {
+      "id": "slide_59",
+      "timestamp": 59.399,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_59.png"
+    },
+    {
+      "id": "slide_59",
+      "timestamp": 59.466,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_59.png"
+    },
+    {
+      "id": "slide_59",
+      "timestamp": 59.533,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_59.png"
+    },
+    {
+      "id": "slide_60",
+      "timestamp": 60.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_60.png"
+    },
+    {
+      "id": "slide_60",
+      "timestamp": 60.333,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_60.png"
+    },
+    {
+      "id": "slide_60",
+      "timestamp": 60.399,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_60.png"
+    },
+    {
+      "id": "slide_60",
+      "timestamp": 60.466,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_60.png"
+    },
+    {
+      "id": "slide_60",
+      "timestamp": 60.566,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_60.png"
+    },
+    {
+      "id": "slide_60",
+      "timestamp": 60.633,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_60.png"
+    },
+    {
+      "id": "slide_60",
+      "timestamp": 60.7,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_60.png"
+    },
+    {
+      "id": "slide_60",
+      "timestamp": 60.766,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_60.png"
+    },
+    {
+      "id": "slide_60",
+      "timestamp": 60.966,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_60.png"
+    },
+    {
+      "id": "slide_61",
+      "timestamp": 61.066,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_61.png"
+    },
+    {
+      "id": "slide_61",
+      "timestamp": 61.233,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_61.png"
+    },
+    {
+      "id": "slide_61",
+      "timestamp": 61.299,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_61.png"
+    },
+    {
+      "id": "slide_61",
+      "timestamp": 61.366,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_61.png"
+    },
+    {
+      "id": "slide_61",
+      "timestamp": 61.533,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_61.png"
+    },
+    {
+      "id": "slide_61",
+      "timestamp": 61.799,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_61.png"
+    },
+    {
+      "id": "slide_62",
+      "timestamp": 62.299,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_62.png"
+    },
+    {
+      "id": "slide_62",
+      "timestamp": 62.366,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_62.png"
+    },
+    {
+      "id": "slide_62",
+      "timestamp": 62.5,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_62.png"
+    },
+    {
+      "id": "slide_62",
+      "timestamp": 62.766,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_62.png"
+    },
+    {
+      "id": "slide_63",
+      "timestamp": 63.133,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_63.png"
+    },
+    {
+      "id": "slide_63",
+      "timestamp": 63.633,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_63.png"
+    },
+    {
+      "id": "slide_64",
+      "timestamp": 64.5,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_64.png"
+    },
+    {
+      "id": "slide_64",
+      "timestamp": 64.93299999999999,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_64.png"
+    },
+    {
+      "id": "slide_65",
+      "timestamp": 65.133,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_65.png"
+    },
+    {
+      "id": "slide_65",
+      "timestamp": 65.333,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_65.png"
+    },
+    {
+      "id": "slide_65",
+      "timestamp": 65.466,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_65.png"
+    },
+    {
+      "id": "slide_65",
+      "timestamp": 65.533,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_65.png"
+    },
+    {
+      "id": "slide_65",
+      "timestamp": 65.799,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_65.png"
+    },
+    {
+      "id": "slide_65",
+      "timestamp": 65.9,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_65.png"
+    },
+    {
+      "id": "slide_65",
+      "timestamp": 65.966,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_65.png"
+    },
+    {
+      "id": "slide_66",
+      "timestamp": 66.033,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_66.png"
+    },
+    {
+      "id": "slide_66",
+      "timestamp": 66.099,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_66.png"
+    },
+    {
+      "id": "slide_66",
+      "timestamp": 66.266,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_66.png"
+    },
+    {
+      "id": "slide_66",
+      "timestamp": 66.366,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_66.png"
+    },
+    {
+      "id": "slide_66",
+      "timestamp": 66.466,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_66.png"
+    },
+    {
+      "id": "slide_66",
+      "timestamp": 66.533,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_66.png"
+    },
+    {
+      "id": "slide_66",
+      "timestamp": 66.599,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_66.png"
+    },
+    {
+      "id": "slide_66",
+      "timestamp": 66.666,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_66.png"
+    },
+    {
+      "id": "slide_66",
+      "timestamp": 66.733,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_66.png"
+    },
+    {
+      "id": "slide_66",
+      "timestamp": 66.833,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_66.png"
+    },
+    {
+      "id": "slide_66",
+      "timestamp": 66.9,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_66.png"
+    },
+    {
+      "id": "slide_66",
+      "timestamp": 66.966,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_66.png"
+    },
+    {
+      "id": "slide_67",
+      "timestamp": 67.033,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_67.png"
+    },
+    {
+      "id": "slide_67",
+      "timestamp": 67.166,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_67.png"
+    },
+    {
+      "id": "slide_67",
+      "timestamp": 67.266,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_67.png"
+    },
+    {
+      "id": "slide_68",
+      "timestamp": 68.366,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_68.png"
+    },
+    {
+      "id": "slide_73",
+      "timestamp": 73.366,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_73.png"
+    },
+    {
+      "id": "slide_74",
+      "timestamp": 74.9,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_74.png"
+    },
+    {
+      "id": "slide_78",
+      "timestamp": 78.099,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_78.png"
+    },
+    {
+      "id": "slide_78",
+      "timestamp": 78.166,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_78.png"
+    },
+    {
+      "id": "slide_78",
+      "timestamp": 78.26599999999999,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_78.png"
+    },
+    {
+      "id": "slide_78",
+      "timestamp": 78.333,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_78.png"
+    },
+    {
+      "id": "slide_78",
+      "timestamp": 78.4,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_78.png"
+    },
+    {
+      "id": "slide_78",
+      "timestamp": 78.5,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_78.png"
+    },
+    {
+      "id": "slide_78",
+      "timestamp": 78.666,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_78.png"
+    },
+    {
+      "id": "slide_78",
+      "timestamp": 78.733,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_78.png"
+    },
+    {
+      "id": "slide_78",
+      "timestamp": 78.833,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_78.png"
+    },
+    {
+      "id": "slide_78",
+      "timestamp": 78.9,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_78.png"
+    },
+    {
+      "id": "slide_79",
+      "timestamp": 79.033,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_79.png"
+    },
+    {
+      "id": "slide_79",
+      "timestamp": 79.099,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_79.png"
+    },
+    {
+      "id": "slide_79",
+      "timestamp": 79.2,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_79.png"
+    },
+    {
+      "id": "slide_79",
+      "timestamp": 79.333,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_79.png"
+    },
+    {
+      "id": "slide_79",
+      "timestamp": 79.43299999999999,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_79.png"
+    },
+    {
+      "id": "slide_79",
+      "timestamp": 79.566,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_79.png"
+    },
+    {
+      "id": "slide_79",
+      "timestamp": 79.633,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_79.png"
+    },
+    {
+      "id": "slide_79",
+      "timestamp": 79.76599999999999,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_79.png"
+    },
+    {
+      "id": "slide_79",
+      "timestamp": 79.833,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_79.png"
+    },
+    {
+      "id": "slide_79",
+      "timestamp": 79.9,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_79.png"
+    },
+    {
+      "id": "slide_79",
+      "timestamp": 79.96600000000001,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_79.png"
+    },
+    {
+      "id": "slide_80",
+      "timestamp": 80.033,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_80.png"
+    },
+    {
+      "id": "slide_80",
+      "timestamp": 80.26599999999999,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_80.png"
+    },
+    {
+      "id": "slide_80",
+      "timestamp": 80.5,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_80.png"
+    },
+    {
+      "id": "slide_80",
+      "timestamp": 80.599,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_80.png"
+    },
+    {
+      "id": "slide_80",
+      "timestamp": 80.733,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_80.png"
+    },
+    {
+      "id": "slide_80",
+      "timestamp": 80.799,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_80.png"
+    },
+    {
+      "id": "slide_80",
+      "timestamp": 80.866,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_80.png"
+    },
+    {
+      "id": "slide_81",
+      "timestamp": 81.333,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_81.png"
+    },
+    {
+      "id": "slide_81",
+      "timestamp": 81.4,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_81.png"
+    },
+    {
+      "id": "slide_81",
+      "timestamp": 81.46600000000001,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_81.png"
+    },
+    {
+      "id": "slide_81",
+      "timestamp": 81.566,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_81.png"
+    },
+    {
+      "id": "slide_81",
+      "timestamp": 81.633,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_81.png"
+    },
+    {
+      "id": "slide_81",
+      "timestamp": 81.76599999999999,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_81.png"
+    },
+    {
+      "id": "slide_82",
+      "timestamp": 82.166,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_82.png"
+    },
+    {
+      "id": "slide_82",
+      "timestamp": 82.233,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_82.png"
+    },
+    {
+      "id": "slide_82",
+      "timestamp": 82.299,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_82.png"
+    },
+    {
+      "id": "slide_82",
+      "timestamp": 82.366,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_82.png"
+    },
+    {
+      "id": "slide_82",
+      "timestamp": 82.5,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_82.png"
+    },
+    {
+      "id": "slide_82",
+      "timestamp": 82.566,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_82.png"
+    },
+    {
+      "id": "slide_82",
+      "timestamp": 82.633,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_82.png"
+    },
+    {
+      "id": "slide_82",
+      "timestamp": 82.7,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_82.png"
+    },
+    {
+      "id": "slide_82",
+      "timestamp": 82.799,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_82.png"
+    },
+    {
+      "id": "slide_82",
+      "timestamp": 82.866,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_82.png"
+    },
+    {
+      "id": "slide_82",
+      "timestamp": 82.93299999999999,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_82.png"
+    },
+    {
+      "id": "slide_83",
+      "timestamp": 83.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_83.png"
+    },
+    {
+      "id": "slide_83",
+      "timestamp": 83.166,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_83.png"
+    },
+    {
+      "id": "slide_83",
+      "timestamp": 83.5,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_83.png"
+    },
+    {
+      "id": "slide_83",
+      "timestamp": 83.7,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_83.png"
+    },
+    {
+      "id": "slide_83",
+      "timestamp": 83.96600000000001,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_83.png"
+    },
+    {
+      "id": "slide_84",
+      "timestamp": 84.033,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_84.png"
+    },
+    {
+      "id": "slide_84",
+      "timestamp": 84.133,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_84.png"
+    },
+    {
+      "id": "slide_84",
+      "timestamp": 84.333,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_84.png"
+    },
+    {
+      "id": "slide_85",
+      "timestamp": 85.566,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_85.png"
+    },
+    {
+      "id": "slide_85",
+      "timestamp": 85.633,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_85.png"
+    },
+    {
+      "id": "slide_85",
+      "timestamp": 85.7,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_85.png"
+    },
+    {
+      "id": "slide_85",
+      "timestamp": 85.76599999999999,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_85.png"
+    },
+    {
+      "id": "slide_85",
+      "timestamp": 85.833,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_85.png"
+    },
+    {
+      "id": "slide_85",
+      "timestamp": 85.9,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_85.png"
+    },
+    {
+      "id": "slide_85",
+      "timestamp": 85.96600000000001,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_85.png"
+    },
+    {
+      "id": "slide_86",
+      "timestamp": 86.299,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_86.png"
+    },
+    {
+      "id": "slide_86",
+      "timestamp": 86.4,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_86.png"
+    },
+    {
+      "id": "slide_86",
+      "timestamp": 86.46600000000001,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_86.png"
+    },
+    {
+      "id": "slide_86",
+      "timestamp": 86.633,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_86.png"
+    },
+    {
+      "id": "slide_86",
+      "timestamp": 86.866,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_86.png"
+    },
+    {
+      "id": "slide_86",
+      "timestamp": 86.9,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_86.png"
+    },
+    {
+      "id": "slide_87",
+      "timestamp": 87.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_87.png"
+    },
+    {
+      "id": "slide_87",
+      "timestamp": 87.066,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_87.png"
+    },
+    {
+      "id": "slide_87",
+      "timestamp": 87.166,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_87.png"
+    },
+    {
+      "id": "slide_87",
+      "timestamp": 87.26599999999999,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_87.png"
+    },
+    {
+      "id": "slide_87",
+      "timestamp": 87.333,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_87.png"
+    },
+    {
+      "id": "slide_87",
+      "timestamp": 87.4,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_87.png"
+    },
+    {
+      "id": "slide_88",
+      "timestamp": 88.43299999999999,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_88.png"
+    },
+    {
+      "id": "slide_88",
+      "timestamp": 88.533,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_88.png"
+    },
+    {
+      "id": "slide_88",
+      "timestamp": 88.599,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_88.png"
+    },
+    {
+      "id": "slide_88",
+      "timestamp": 88.666,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_88.png"
+    },
+    {
+      "id": "slide_88",
+      "timestamp": 88.833,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_88.png"
+    },
+    {
+      "id": "slide_89",
+      "timestamp": 89.033,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_89.png"
+    },
+    {
+      "id": "slide_89",
+      "timestamp": 89.799,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_89.png"
+    },
+    {
+      "id": "slide_90",
+      "timestamp": 90.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_90.png"
+    },
+    {
+      "id": "slide_95",
+      "timestamp": 95.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_95.png"
+    },
+    {
+      "id": "slide_96",
+      "timestamp": 96.63300000000001,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_96.png"
+    },
+    {
+      "id": "slide_96",
+      "timestamp": 96.799,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_96.png"
+    },
+    {
+      "id": "slide_96",
+      "timestamp": 96.866,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_96.png"
+    },
+    {
+      "id": "slide_101",
+      "timestamp": 101.866,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_101.png"
+    },
+    {
+      "id": "slide_106",
+      "timestamp": 106.866,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_106.png"
+    },
+    {
+      "id": "slide_111",
+      "timestamp": 111.76599999999999,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_111.png"
+    },
+    {
+      "id": "slide_111",
+      "timestamp": 111.9,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_111.png"
+    },
+    {
+      "id": "slide_111",
+      "timestamp": 111.96600000000001,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_111.png"
+    },
+    {
+      "id": "slide_112",
+      "timestamp": 112.033,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_112.png"
+    },
+    {
+      "id": "slide_112",
+      "timestamp": 112.09899999999999,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_112.png"
+    },
+    {
+      "id": "slide_112",
+      "timestamp": 112.46600000000001,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_112.png"
+    },
+    {
+      "id": "slide_113",
+      "timestamp": 113.13300000000001,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_113.png"
+    },
+    {
+      "id": "slide_113",
+      "timestamp": 113.26599999999999,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_113.png"
+    },
+    {
+      "id": "slide_113",
+      "timestamp": 113.366,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_113.png"
+    },
+    {
+      "id": "slide_113",
+      "timestamp": 113.43299999999999,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_113.png"
+    },
+    {
+      "id": "slide_113",
+      "timestamp": 113.5,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_113.png"
+    },
+    {
+      "id": "slide_113",
+      "timestamp": 113.566,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_113.png"
+    },
+    {
+      "id": "slide_113",
+      "timestamp": 113.666,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_113.png"
+    },
+    {
+      "id": "slide_113",
+      "timestamp": 113.733,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_113.png"
+    },
+    {
+      "id": "slide_113",
+      "timestamp": 113.799,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_113.png"
+    },
+    {
+      "id": "slide_113",
+      "timestamp": 113.866,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_113.png"
+    },
+    {
+      "id": "slide_113",
+      "timestamp": 113.93299999999999,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_113.png"
+    },
+    {
+      "id": "slide_114",
+      "timestamp": 114.166,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_114.png"
+    },
+    {
+      "id": "slide_114",
+      "timestamp": 114.233,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_114.png"
+    },
+    {
+      "id": "slide_114",
+      "timestamp": 114.366,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_114.png"
+    },
+    {
+      "id": "slide_114",
+      "timestamp": 114.46600000000001,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_114.png"
+    },
+    {
+      "id": "slide_114",
+      "timestamp": 114.7,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_114.png"
+    },
+    {
+      "id": "slide_114",
+      "timestamp": 114.76599999999999,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_114.png"
+    },
+    {
+      "id": "slide_114",
+      "timestamp": 114.866,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_114.png"
+    },
+    {
+      "id": "slide_114",
+      "timestamp": 114.93299999999999,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_114.png"
+    },
+    {
+      "id": "slide_115",
+      "timestamp": 115.066,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_115.png"
+    },
+    {
+      "id": "slide_115",
+      "timestamp": 115.166,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_115.png"
+    },
+    {
+      "id": "slide_115",
+      "timestamp": 115.733,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_115.png"
+    },
+    {
+      "id": "slide_115",
+      "timestamp": 115.799,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_115.png"
+    },
+    {
+      "id": "slide_115",
+      "timestamp": 115.866,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_115.png"
+    },
+    {
+      "id": "slide_115",
+      "timestamp": 115.93299999999999,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_115.png"
+    },
+    {
+      "id": "slide_116",
+      "timestamp": 116.066,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_116.png"
+    },
+    {
+      "id": "slide_116",
+      "timestamp": 116.533,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_116.png"
+    },
+    {
+      "id": "slide_116",
+      "timestamp": 116.59899999999999,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_116.png"
+    },
+    {
+      "id": "slide_116",
+      "timestamp": 116.7,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_116.png"
+    },
+    {
+      "id": "slide_116",
+      "timestamp": 116.93299999999999,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_116.png"
+    },
+    {
+      "id": "slide_117",
+      "timestamp": 117.93299999999999,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_117.png"
+    },
+    {
+      "id": "slide_118",
+      "timestamp": 118.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_118.png"
+    },
+    {
+      "id": "slide_118",
+      "timestamp": 118.066,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_118.png"
+    },
+    {
+      "id": "slide_118",
+      "timestamp": 118.13300000000001,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_118.png"
+    },
+    {
+      "id": "slide_118",
+      "timestamp": 118.26599999999999,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_118.png"
+    },
+    {
+      "id": "slide_118",
+      "timestamp": 118.4,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_118.png"
+    },
+    {
+      "id": "slide_118",
+      "timestamp": 118.46600000000001,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_118.png"
+    },
+    {
+      "id": "slide_118",
+      "timestamp": 118.96600000000001,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_118.png"
+    },
+    {
+      "id": "slide_119",
+      "timestamp": 119.566,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_119.png"
+    },
+    {
+      "id": "slide_120",
+      "timestamp": 120.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_120.png"
+    },
+    {
+      "id": "slide_121",
+      "timestamp": 121.166,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_121.png"
+    },
+    {
+      "id": "slide_121",
+      "timestamp": 121.266,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_121.png"
+    },
+    {
+      "id": "slide_121",
+      "timestamp": 121.366,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_121.png"
+    },
+    {
+      "id": "slide_122",
+      "timestamp": 122.599,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_122.png"
+    },
+    {
+      "id": "slide_123",
+      "timestamp": 123.966,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_123.png"
+    },
+    {
+      "id": "slide_125",
+      "timestamp": 125.299,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_125.png"
+    },
+    {
+      "id": "slide_125",
+      "timestamp": 125.666,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_125.png"
+    },
+    {
+      "id": "slide_126",
+      "timestamp": 126.966,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_126.png"
+    },
+    {
+      "id": "slide_127",
+      "timestamp": 127.166,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_127.png"
+    },
+    {
+      "id": "slide_130",
+      "timestamp": 130.86599999999999,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_130.png"
+    },
+    {
+      "id": "slide_130",
+      "timestamp": 130.933,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_130.png"
+    },
+    {
+      "id": "slide_131",
+      "timestamp": 131.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_131.png"
+    },
+    {
+      "id": "slide_131",
+      "timestamp": 131.133,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_131.png"
+    },
+    {
+      "id": "slide_131",
+      "timestamp": 131.199,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_131.png"
+    },
+    {
+      "id": "slide_131",
+      "timestamp": 131.266,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_131.png"
+    },
+    {
+      "id": "slide_131",
+      "timestamp": 131.36599999999999,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_131.png"
+    },
+    {
+      "id": "slide_131",
+      "timestamp": 131.433,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_131.png"
+    },
+    {
+      "id": "slide_131",
+      "timestamp": 131.933,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_131.png"
+    },
+    {
+      "id": "slide_132",
+      "timestamp": 132.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_132.png"
+    },
+    {
+      "id": "slide_132",
+      "timestamp": 132.066,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_132.png"
+    },
+    {
+      "id": "slide_132",
+      "timestamp": 132.166,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_132.png"
+    },
+    {
+      "id": "slide_132",
+      "timestamp": 132.233,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_132.png"
+    },
+    {
+      "id": "slide_132",
+      "timestamp": 132.3,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_132.png"
+    },
+    {
+      "id": "slide_132",
+      "timestamp": 132.36599999999999,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_132.png"
+    },
+    {
+      "id": "slide_132",
+      "timestamp": 132.433,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_132.png"
+    },
+    {
+      "id": "slide_132",
+      "timestamp": 132.5,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_132.png"
+    },
+    {
+      "id": "slide_132",
+      "timestamp": 132.566,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_132.png"
+    },
+    {
+      "id": "slide_133",
+      "timestamp": 133.033,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_133.png"
+    },
+    {
+      "id": "slide_133",
+      "timestamp": 133.099,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_133.png"
+    },
+    {
+      "id": "slide_133",
+      "timestamp": 133.166,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_133.png"
+    },
+    {
+      "id": "slide_133",
+      "timestamp": 133.233,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_133.png"
+    },
+    {
+      "id": "slide_133",
+      "timestamp": 133.3,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_133.png"
+    },
+    {
+      "id": "slide_133",
+      "timestamp": 133.36599999999999,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_133.png"
+    },
+    {
+      "id": "slide_133",
+      "timestamp": 133.433,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_133.png"
+    },
+    {
+      "id": "slide_133",
+      "timestamp": 133.533,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_133.png"
+    },
+    {
+      "id": "slide_133",
+      "timestamp": 133.966,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_133.png"
+    },
+    {
+      "id": "slide_134",
+      "timestamp": 134.36599999999999,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_134.png"
+    },
+    {
+      "id": "slide_139",
+      "timestamp": 139.36599999999999,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_139.png"
+    },
+    {
+      "id": "slide_141",
+      "timestamp": 141.36599999999999,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_141.png"
+    },
+    {
+      "id": "slide_141",
+      "timestamp": 141.466,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_141.png"
+    },
+    {
+      "id": "slide_141",
+      "timestamp": 141.566,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_141.png"
+    },
+    {
+      "id": "slide_141",
+      "timestamp": 141.633,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_141.png"
+    },
+    {
+      "id": "slide_141",
+      "timestamp": 141.699,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_141.png"
+    },
+    {
+      "id": "slide_142",
+      "timestamp": 142.166,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_142.png"
+    },
+    {
+      "id": "slide_142",
+      "timestamp": 142.36599999999999,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_142.png"
+    },
+    {
+      "id": "slide_145",
+      "timestamp": 145.066,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_145.png"
+    },
+    {
+      "id": "slide_145",
+      "timestamp": 145.166,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_145.png"
+    },
+    {
+      "id": "slide_146",
+      "timestamp": 146.433,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_146.png"
+    },
+    {
+      "id": "slide_146",
+      "timestamp": 146.5,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_146.png"
+    },
+    {
+      "id": "slide_146",
+      "timestamp": 146.599,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_146.png"
+    },
+    {
+      "id": "slide_146",
+      "timestamp": 146.666,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_146.png"
+    },
+    {
+      "id": "slide_146",
+      "timestamp": 146.833,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_146.png"
+    },
+    {
+      "id": "slide_146",
+      "timestamp": 146.9,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_146.png"
+    },
+    {
+      "id": "slide_147",
+      "timestamp": 147.099,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_147.png"
+    },
+    {
+      "id": "slide_147",
+      "timestamp": 147.233,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_147.png"
+    },
+    {
+      "id": "slide_147",
+      "timestamp": 147.53300000000002,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_147.png"
+    },
+    {
+      "id": "slide_147",
+      "timestamp": 147.666,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_147.png"
+    },
+    {
+      "id": "slide_147",
+      "timestamp": 147.86599999999999,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_147.png"
+    },
+    {
+      "id": "slide_147",
+      "timestamp": 147.933,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_147.png"
+    },
+    {
+      "id": "slide_148",
+      "timestamp": 148.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_148.png"
+    },
+    {
+      "id": "slide_148",
+      "timestamp": 148.066,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_148.png"
+    },
+    {
+      "id": "slide_148",
+      "timestamp": 148.133,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_148.png"
+    },
+    {
+      "id": "slide_148",
+      "timestamp": 148.199,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_148.png"
+    },
+    {
+      "id": "slide_148",
+      "timestamp": 148.266,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_148.png"
+    },
+    {
+      "id": "slide_148",
+      "timestamp": 148.36599999999999,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_148.png"
+    },
+    {
+      "id": "slide_148",
+      "timestamp": 148.466,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_148.png"
+    },
+    {
+      "id": "slide_148",
+      "timestamp": 148.53300000000002,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_148.png"
+    },
+    {
+      "id": "slide_148",
+      "timestamp": 148.699,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_148.png"
+    },
+    {
+      "id": "slide_148",
+      "timestamp": 148.766,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_148.png"
+    },
+    {
+      "id": "slide_148",
+      "timestamp": 148.833,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_148.png"
+    },
+    {
+      "id": "slide_148",
+      "timestamp": 148.933,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_148.png"
+    },
+    {
+      "id": "slide_149",
+      "timestamp": 149.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_149.png"
+    },
+    {
+      "id": "slide_149",
+      "timestamp": 149.066,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_149.png"
+    },
+    {
+      "id": "slide_149",
+      "timestamp": 149.133,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_149.png"
+    },
+    {
+      "id": "slide_149",
+      "timestamp": 149.199,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_149.png"
+    },
+    {
+      "id": "slide_149",
+      "timestamp": 149.333,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_149.png"
+    },
+    {
+      "id": "slide_149",
+      "timestamp": 149.466,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_149.png"
+    },
+    {
+      "id": "slide_149",
+      "timestamp": 149.53300000000002,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_149.png"
+    },
+    {
+      "id": "slide_149",
+      "timestamp": 149.599,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_149.png"
+    },
+    {
+      "id": "slide_149",
+      "timestamp": 149.699,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_149.png"
+    },
+    {
+      "id": "slide_149",
+      "timestamp": 149.86599999999999,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_149.png"
+    },
+    {
+      "id": "slide_150",
+      "timestamp": 150.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_150.png"
+    },
+    {
+      "id": "slide_150",
+      "timestamp": 150.03300000000002,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_150.png"
+    },
+    {
+      "id": "slide_150",
+      "timestamp": 150.133,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_150.png"
+    },
+    {
+      "id": "slide_150",
+      "timestamp": 150.199,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_150.png"
+    },
+    {
+      "id": "slide_150",
+      "timestamp": 150.266,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_150.png"
+    },
+    {
+      "id": "slide_150",
+      "timestamp": 150.36599999999999,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_150.png"
+    },
+    {
+      "id": "slide_150",
+      "timestamp": 150.53300000000002,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_150.png"
+    },
+    {
+      "id": "slide_150",
+      "timestamp": 150.699,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_150.png"
+    },
+    {
+      "id": "slide_150",
+      "timestamp": 150.766,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_150.png"
+    },
+    {
+      "id": "slide_150",
+      "timestamp": 150.833,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_150.png"
+    },
+    {
+      "id": "slide_150",
+      "timestamp": 150.9,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_150.png"
+    },
+    {
+      "id": "slide_151",
+      "timestamp": 151.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_151.png"
+    },
+    {
+      "id": "slide_151",
+      "timestamp": 151.166,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_151.png"
+    },
+    {
+      "id": "slide_151",
+      "timestamp": 151.233,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_151.png"
+    },
+    {
+      "id": "slide_151",
+      "timestamp": 151.3,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_151.png"
+    },
+    {
+      "id": "slide_151",
+      "timestamp": 151.599,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_151.png"
+    },
+    {
+      "id": "slide_151",
+      "timestamp": 151.666,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_151.png"
+    },
+    {
+      "id": "slide_151",
+      "timestamp": 151.766,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_151.png"
+    },
+    {
+      "id": "slide_151",
+      "timestamp": 151.933,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_151.png"
+    },
+    {
+      "id": "slide_152",
+      "timestamp": 152.066,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_152.png"
+    },
+    {
+      "id": "slide_152",
+      "timestamp": 152.133,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_152.png"
+    },
+    {
+      "id": "slide_152",
+      "timestamp": 152.199,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_152.png"
+    },
+    {
+      "id": "slide_152",
+      "timestamp": 152.266,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_152.png"
+    },
+    {
+      "id": "slide_152",
+      "timestamp": 152.36599999999999,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_152.png"
+    },
+    {
+      "id": "slide_152",
+      "timestamp": 152.766,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_152.png"
+    },
+    {
+      "id": "slide_153",
+      "timestamp": 153.4,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_153.png"
+    },
+    {
+      "id": "slide_153",
+      "timestamp": 153.86599999999999,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_153.png"
+    },
+    {
+      "id": "slide_154",
+      "timestamp": 154.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_154.png"
+    },
+    {
+      "id": "slide_154",
+      "timestamp": 154.5,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_154.png"
+    },
+    {
+      "id": "slide_154",
+      "timestamp": 154.566,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_154.png"
+    },
+    {
+      "id": "slide_155",
+      "timestamp": 155.36599999999999,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_155.png"
+    },
+    {
+      "id": "slide_155",
+      "timestamp": 155.9,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_155.png"
+    },
+    {
+      "id": "slide_156",
+      "timestamp": 156.966,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_156.png"
+    },
+    {
+      "id": "slide_157",
+      "timestamp": 157.03300000000002,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_157.png"
+    },
+    {
+      "id": "slide_157",
+      "timestamp": 157.133,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_157.png"
+    },
+    {
+      "id": "slide_159",
+      "timestamp": 159.066,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_159.png"
+    },
+    {
+      "id": "slide_160",
+      "timestamp": 160.199,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_160.png"
+    },
+    {
+      "id": "slide_160",
+      "timestamp": 160.266,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_160.png"
+    },
+    {
+      "id": "slide_160",
+      "timestamp": 160.566,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_160.png"
+    },
+    {
+      "id": "slide_160",
+      "timestamp": 160.633,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_160.png"
+    },
+    {
+      "id": "slide_160",
+      "timestamp": 160.86599999999999,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_160.png"
+    },
+    {
+      "id": "slide_160",
+      "timestamp": 160.966,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_160.png"
+    },
+    {
+      "id": "slide_163",
+      "timestamp": 163.666,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_163.png"
+    },
+    {
+      "id": "slide_163",
+      "timestamp": 163.8,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_163.png"
+    },
+    {
+      "id": "slide_168",
+      "timestamp": 168.8,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_168.png"
+    },
+    {
+      "id": "slide_173",
+      "timestamp": 173.8,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_173.png"
+    },
+    {
+      "id": "slide_178",
+      "timestamp": 178.8,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_178.png"
+    },
+    {
+      "id": "slide_180",
+      "timestamp": 180.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_180.png"
+    },
+    {
+      "id": "slide_185",
+      "timestamp": 185.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_185.png"
+    },
+    {
+      "id": "slide_189",
+      "timestamp": 189.166,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_189.png"
+    },
+    {
+      "id": "slide_189",
+      "timestamp": 189.3,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_189.png"
+    },
+    {
+      "id": "slide_190",
+      "timestamp": 190.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_190.png"
+    },
+    {
+      "id": "slide_190",
+      "timestamp": 190.099,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_190.png"
+    },
+    {
+      "id": "slide_190",
+      "timestamp": 190.599,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_190.png"
+    },
+    {
+      "id": "slide_190",
+      "timestamp": 190.766,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_190.png"
+    },
+    {
+      "id": "slide_190",
+      "timestamp": 190.833,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_190.png"
+    },
+    {
+      "id": "slide_190",
+      "timestamp": 190.9,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_190.png"
+    },
+    {
+      "id": "slide_190",
+      "timestamp": 190.966,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_190.png"
+    },
+    {
+      "id": "slide_192",
+      "timestamp": 192.266,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_192.png"
+    },
+    {
+      "id": "slide_192",
+      "timestamp": 192.36599999999999,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_192.png"
+    },
+    {
+      "id": "slide_192",
+      "timestamp": 192.433,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_192.png"
+    },
+    {
+      "id": "slide_193",
+      "timestamp": 193.3,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_193.png"
+    },
+    {
+      "id": "slide_193",
+      "timestamp": 193.8,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_193.png"
+    },
+    {
+      "id": "slide_194",
+      "timestamp": 194.199,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_194.png"
+    },
+    {
+      "id": "slide_194",
+      "timestamp": 194.3,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_194.png"
+    },
+    {
+      "id": "slide_194",
+      "timestamp": 194.4,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_194.png"
+    },
+    {
+      "id": "slide_194",
+      "timestamp": 194.5,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_194.png"
+    },
+    {
+      "id": "slide_194",
+      "timestamp": 194.599,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_194.png"
+    },
+    {
+      "id": "slide_194",
+      "timestamp": 194.699,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_194.png"
+    },
+    {
+      "id": "slide_194",
+      "timestamp": 194.8,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_194.png"
+    },
+    {
+      "id": "slide_194",
+      "timestamp": 194.9,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_194.png"
+    },
+    {
+      "id": "slide_195",
+      "timestamp": 195.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_195.png"
+    },
+    {
+      "id": "slide_195",
+      "timestamp": 195.099,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_195.png"
+    },
+    {
+      "id": "slide_195",
+      "timestamp": 195.233,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_195.png"
+    },
+    {
+      "id": "slide_195",
+      "timestamp": 195.3,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_195.png"
+    },
+    {
+      "id": "slide_195",
+      "timestamp": 195.4,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_195.png"
+    },
+    {
+      "id": "slide_195",
+      "timestamp": 195.5,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_195.png"
+    },
+    {
+      "id": "slide_196",
+      "timestamp": 196.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_196.png"
+    },
+    {
+      "id": "slide_201",
+      "timestamp": 201.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_201.png"
+    },
+    {
+      "id": "slide_206",
+      "timestamp": 206.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_206.png"
+    },
+    {
+      "id": "slide_210",
+      "timestamp": 210.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_210.png"
+    },
+    {
+      "id": "slide_210",
+      "timestamp": 210.166,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_210.png"
+    },
+    {
+      "id": "slide_215",
+      "timestamp": 215.166,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_215.png"
+    },
+    {
+      "id": "slide_220",
+      "timestamp": 220.166,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_220.png"
+    },
+    {
+      "id": "slide_225",
+      "timestamp": 225.166,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_225.png"
+    },
+    {
+      "id": "slide_230",
+      "timestamp": 230.166,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_230.png"
+    },
+    {
+      "id": "slide_235",
+      "timestamp": 235.166,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_235.png"
+    },
+    {
+      "id": "slide_240",
+      "timestamp": 240.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_240.png"
+    },
+    {
+      "id": "slide_245",
+      "timestamp": 245.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_245.png"
+    },
+    {
+      "id": "slide_250",
+      "timestamp": 250.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_250.png"
+    },
+    {
+      "id": "slide_255",
+      "timestamp": 255.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_255.png"
+    },
+    {
+      "id": "slide_256",
+      "timestamp": 256.33299999999997,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_256.png"
+    },
+    {
+      "id": "slide_256",
+      "timestamp": 256.399,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_256.png"
+    },
+    {
+      "id": "slide_256",
+      "timestamp": 256.466,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_256.png"
+    },
+    {
+      "id": "slide_257",
+      "timestamp": 257.6,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_257.png"
+    },
+    {
+      "id": "slide_262",
+      "timestamp": 262.6,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_262.png"
+    },
+    {
+      "id": "slide_267",
+      "timestamp": 267.6,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_267.png"
+    },
+    {
+      "id": "slide_270",
+      "timestamp": 270.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_270.png"
+    },
+    {
+      "id": "slide_275",
+      "timestamp": 275.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\test3_slide_275.png"
+    }
+  ]
+}

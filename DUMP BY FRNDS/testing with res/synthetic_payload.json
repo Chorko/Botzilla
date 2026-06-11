@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "title": "Synthetic 0-Hallucination Meeting",
+    "duration": "00:00:40",
+    "participants": "2",
+    "language": "English",
+    "slides": "4",
+    "mode": "UNIFIED",
+    "source": "synthetic_inputs"
+  },
+  "exec_summary": "This is a 100% deterministic synthetic meeting summary generated directly from the audio and vision engine outputs, bypassing LLM hallucination entirely.",
+  "key_topics": [
+    {
+      "title": "Synthetic Intro",
+      "body": "Introductory remarks generated perfectly from segment timestamps."
+    },
+    {
+      "title": "Synthetic Conclusion",
+      "body": "Concluding remarks."
+    }
+  ],
+  "speakers": [
+    {
+      "name": "Speaker 1",
+      "duration": "14s",
+      "pct": "N/A",
+      "words": "34"
+    },
+    {
+      "name": "Speaker 2",
+      "duration": "15s",
+      "pct": "N/A",
+      "words": "30"
+    }
+  ],
+  "utterances": [
+    {
+      "speaker": "Speaker 1",
+      "start": "00:00:00",
+      "end": "00:00:08",
+      "text": "Hello everyone. Welcome to our synthetic meeting. Today we're going to cover four main topics, starting with the introduction.",
+      "slide_timestamp": "00:00:00"
+    },
+    {
+      "speaker": "Speaker 2",
+      "start": "00:00:10",
+      "end": "00:00:18",
+      "text": "Thanks Speaker 1. If we look at the architecture here, you can see it's quite robust and scalable.",
+      "slide_timestamp": "00:00:10"
+    },
+    {
+      "speaker": "Speaker 1",
+      "start": "00:00:21",
+      "end": "00:00:28",
+      "text": "Exactly. And for the implementation, we'll be using Python and Node.js to glue everything together.",
+      "slide_timestamp": "00:00:21"
+    },
+    {
+      "speaker": "Speaker 2",
+      "start": "00:00:31",
+      "end": "00:00:39",
+      "text": "That concludes our presentation. Let me know if there are any questions.",
+      "slide_timestamp": "00:00:31"
+    }
+  ],
+  "slides": [
+    {
+      "id": "slide_0",
+      "timestamp": 0.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\synthetic_slide_0.png"
+    },
+    {
+      "id": "slide_10",
+      "timestamp": 10.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\synthetic_slide_10.png"
+    },
+    {
+      "id": "slide_20",
+      "timestamp": 20.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\synthetic_slide_20.png"
+    },
+    {
+      "id": "slide_30",
+      "timestamp": 30.0,
+      "dataUrl": "d:\\ai-meeting-summarizer\\DUMP BY FRNDS\\testing with res\\synthetic_slide_30.png"
+    }
+  ]
+}

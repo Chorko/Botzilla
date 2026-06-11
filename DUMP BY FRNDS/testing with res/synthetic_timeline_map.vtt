@@ -1,0 +1,21 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:10.000
+#xywh=0,0,500,500
+Title: Slide 1 Intro
+Text: Welcome to the synthetic meeting.
+
+00:00:10.000 --> 00:00:20.000
+#xywh=500,0,500,500
+Title: Slide 2 Architecture
+Text: This is the architecture slide.
+
+00:00:20.000 --> 00:00:30.000
+#xywh=0,500,500,500
+Title: Slide 3 Implementation
+Text: Here we implement the code.
+
+00:00:30.000 --> 00:00:40.000
+#xywh=500,500,500,500
+Title: Slide 4 Conclusion
+Text: Thank you for attending.

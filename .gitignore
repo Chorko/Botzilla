@@ -17,3 +17,11 @@ output/
 *.dll
 *.lib
 DUMP BY FRNDS/**/*.png
+
+# Added for reference
+reference.md
+*.docx
+temp_template/
+temp_template.zip
+slides_meta.json
+extract_slides.py

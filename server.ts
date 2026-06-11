@@ -5,6 +5,7 @@ import { spawn } from "child_process";
 import multer from "multer";
 import { createServer as createViteServer } from "vite";
 import { GoogleGenAI, Type } from "@google/genai";
+import { compileMeetingDocx, generateDetailedDocxSummary } from "./docxGenerator";
 import { 
   Document, 
   Paragraph, 
@@ -133,6 +134,7 @@ async function startServer() {
         '--output-dir', taskOutputDir,
         '--task-id', taskId,
         '--gemini-key', process.env.GEMINI_API_KEY || '',
+        '--groq-key', process.env.GROQ_API_KEY || '',
         '--hf-token', process.env.HF_TOKEN || ''
       ];
       
@@ -529,263 +531,19 @@ The conversational session logged ${totalConversations} statements from particip
         return;
       }
 
-      const excludedSet = new Set(excludedSlideIds);
-      const docChildren: any[] = [];
-      const now = new Date();
-      const dateStr = summary.date || now.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
-      const timeStr = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
-
-      // HELPER: Extract image buffer from slide dataUrl
-      const getImageBuffer = (s: any) => {
-        if (s && s.dataUrl) {
-          if (s.dataUrl.startsWith("data:image/") && s.dataUrl.includes("base64,")) {
-            try {
-              return Buffer.from(s.dataUrl.split("base64,")[1], "base64");
-            } catch (e) { console.error("Image buffer error", e); }
-          } else {
-            try {
-              let p = s.dataUrl.startsWith("/") ? s.dataUrl.substring(1) : s.dataUrl;
-              const abs = path.join(process.cwd(), p);
-              if (fs.existsSync(abs)) return fs.readFileSync(abs);
-            } catch (e) { console.error("Disk image error:", e); }
-          }
-        }
-        return null;
-      };
-
-      const addHeading = (text: string, level: any) => new Paragraph({
-        text, heading: level, spacing: { before: 300, after: 120 }, keepNext: true,
-      });
-
-      // Compute metrics
-      const speakerEntries = Object.entries(summary.speakerMapping || {});
-      const segmentCount = summary.segments?.length || 0;
-      const decisionCount = summary.decisions?.length || 0;
-      const actionCount = summary.actionItems?.length || 0;
-      const activeSlides = (summary.slides || []).filter((s: any) => !excludedSet.has(s.id));
-
-      // ═══ TITLE ═══
-      docChildren.push(new Paragraph({
-        children: [new TextRun({ text: (summary.title || "MEETING SUMMARY REPORT").toUpperCase(), bold: true, size: 44, color: "1E293B" })],
-        alignment: AlignmentType.CENTER, spacing: { after: 80 },
-      }));
-      docChildren.push(new Paragraph({
-        children: [new TextRun({ text: `${dateStr} • Generated at ${timeStr}`, italics: true, size: 20, color: "64748B" })],
-        alignment: AlignmentType.CENTER, spacing: { after: 60 },
-      }));
-      // Thin separator line
-      docChildren.push(new Paragraph({
-        children: [new TextRun({ text: "━".repeat(60), color: "E2E8F0", size: 16 })],
-        alignment: AlignmentType.CENTER, spacing: { after: 240 },
-      }));
-
-      // ═══ MEETING METRICS ═══
-      const metricsRow = new Table({
-        rows: [
-          new TableRow({
-            children: [
-              { label: "Participants", value: String(speakerEntries.length) },
-              { label: "Segments", value: String(segmentCount) },
-              { label: "Decisions", value: String(decisionCount) },
-              { label: "Action Items", value: String(actionCount) },
-            ].map(m => new TableCell({
-              children: [
-                new Paragraph({ children: [new TextRun({ text: m.value, bold: true, size: 28, color: "4F46E5" })], alignment: AlignmentType.CENTER, spacing: { after: 40 } }),
-                new Paragraph({ children: [new TextRun({ text: m.label.toUpperCase(), size: 14, color: "94A3B8", bold: true })], alignment: AlignmentType.CENTER }),
-              ],
-              shading: { fill: "F8FAFC" },
-              margins: { top: 100, bottom: 100, left: 80, right: 80 },
-            })),
-          }),
-        ],
-        width: { size: 100, type: WidthType.PERCENTAGE },
-        borders: {
-          top: { style: BorderStyle.SINGLE, size: 2, color: "E2E8F0" },
-          bottom: { style: BorderStyle.SINGLE, size: 2, color: "E2E8F0" },
-          left: { style: BorderStyle.SINGLE, size: 2, color: "E2E8F0" },
-          right: { style: BorderStyle.SINGLE, size: 2, color: "E2E8F0" },
-          insideHorizontal: { style: BorderStyle.NONE },
-          insideVertical: { style: BorderStyle.SINGLE, size: 1, color: "E2E8F0" },
-        },
-      });
-      docChildren.push(metricsRow);
-      docChildren.push(new Paragraph({ text: "", spacing: { after: 200 } }));
-
-      // ═══ PARTICIPANTS ═══
-      if (speakerEntries.length > 0) {
-        docChildren.push(addHeading("1. Meeting Participants", HeadingLevel.HEADING_1));
-        const speakerRows: TableRow[] = [
-          new TableRow({
-            children: [
-              new TableCell({ children: [new Paragraph({ children: [new TextRun({ text: "Speaker ID", bold: true, color: "FFFFFF", size: 18 })] })], shading: { fill: "334155" }, width: { size: 30, type: WidthType.PERCENTAGE } }),
-              new TableCell({ children: [new Paragraph({ children: [new TextRun({ text: "Resolved Name", bold: true, color: "FFFFFF", size: 18 })] })], shading: { fill: "334155" }, width: { size: 70, type: WidthType.PERCENTAGE } }),
-            ],
-          }),
-        ];
-        speakerEntries.forEach(([key, name], idx) => {
-          speakerRows.push(new TableRow({
-            children: [
-              new TableCell({ children: [new Paragraph({ children: [new TextRun({ text: key, size: 20, font: "Consolas" })] })], shading: { fill: idx % 2 ? "F8FAFC" : "FFFFFF" } }),
-              new TableCell({ children: [new Paragraph({ children: [new TextRun({ text: name as string, size: 20, bold: true })] })], shading: { fill: idx % 2 ? "F8FAFC" : "FFFFFF" } }),
-            ],
-          }));
-        });
-        docChildren.push(new Table({
-          rows: speakerRows,
-          width: { size: 100, type: WidthType.PERCENTAGE },
-          borders: {
-            top: { style: BorderStyle.SINGLE, size: 3, color: "E2E8F0" },
-            bottom: { style: BorderStyle.SINGLE, size: 3, color: "E2E8F0" },
-            left: { style: BorderStyle.SINGLE, size: 3, color: "E2E8F0" },
-            right: { style: BorderStyle.SINGLE, size: 3, color: "E2E8F0" },
-            insideHorizontal: { style: BorderStyle.SINGLE, size: 1, color: "E2E8F0" },
-            insideVertical: { style: BorderStyle.SINGLE, size: 1, color: "E2E8F0" },
-          },
-        }));
-        docChildren.push(new Paragraph({ text: "", spacing: { after: 200 } }));
-      }
-
-      // ═══ EXECUTIVE SUMMARY ═══
-      docChildren.push(addHeading("2. Executive Summary", HeadingLevel.HEADING_1));
-      docChildren.push(new Paragraph({
-        children: [new TextRun({ text: summary.executiveSummary || "No summary available.", size: 22 })],
-        spacing: { line: 276, after: 200 },
-      }));
-
-      // ═══ KEY DECISIONS ═══
-      docChildren.push(addHeading("3. Key Decisions", HeadingLevel.HEADING_1));
-      if (summary.decisions && summary.decisions.length > 0) {
-        summary.decisions.forEach((d: any, i: number) => {
-          docChildren.push(new Paragraph({
-            children: [
-              new TextRun({ text: `${i + 1}. `, bold: true, size: 22, color: "059669" }),
-              new TextRun({ text: d.decision, bold: true, size: 22 }),
-            ],
-            spacing: { after: 40 },
-          }));
-          docChildren.push(new Paragraph({
-            children: [
-              new TextRun({ text: `Owner: ${d.owner}`, size: 18, color: "475569" }),
-              new TextRun({ text: d.context ? `  •  ${d.context}` : "", size: 18, italics: true, color: "94A3B8" }),
-            ],
-            spacing: { after: 160 },
-          }));
-        });
-      } else {
-        docChildren.push(new Paragraph({ children: [new TextRun({ text: "No decisions recorded.", size: 20, italics: true, color: "94A3B8" })], spacing: { after: 120 } }));
-      }
-
-      // ═══ DISCUSSION POINTS ═══
-      if (summary.keyPoints && summary.keyPoints.length > 0) {
-        docChildren.push(addHeading("4. Discussion Points", HeadingLevel.HEADING_1));
-        summary.keyPoints.forEach((kp: any) => {
-          docChildren.push(new Paragraph({
-            children: [
-              new TextRun({ text: `[${kp.category}] `, bold: true, size: 20, color: "4F46E5" }),
-              new TextRun({ text: kp.point, size: 20 }),
-            ],
-            spacing: { after: 120 },
-          }));
-        });
-      }
-
-      // ═══ ACTION ITEMS TABLE ═══
-      docChildren.push(addHeading("5. Action Items", HeadingLevel.HEADING_1));
-      const actionRows: TableRow[] = [
-        new TableRow({
-          children: ["Task", "Owner", "Priority", "Deadline"].map((h, i) =>
-            new TableCell({
-              children: [new Paragraph({ children: [new TextRun({ text: h, bold: true, color: "FFFFFF", size: 18 })], alignment: i > 1 ? AlignmentType.CENTER : AlignmentType.LEFT })],
-              shading: { fill: "4F46E5" },
-              width: { size: i === 0 ? 45 : i === 1 ? 22 : i === 2 ? 13 : 20, type: WidthType.PERCENTAGE },
-            })
-          ),
-        }),
-      ];
-      if (summary.actionItems && summary.actionItems.length > 0) {
-        summary.actionItems.forEach((act: any, idx: number) => {
-          const bg = idx % 2 ? "F8FAFC" : "FFFFFF";
-          const priorityColor = act.priority === "High" ? "DC2626" : act.priority === "Medium" ? "D97706" : "059669";
-          actionRows.push(new TableRow({
-            children: [
-              new TableCell({ children: [new Paragraph({ children: [new TextRun({ text: act.task, size: 20 })] })], shading: { fill: bg } }),
-              new TableCell({ children: [new Paragraph({ children: [new TextRun({ text: act.owner, size: 20, bold: true })] })], shading: { fill: bg } }),
-              new TableCell({ children: [new Paragraph({ children: [new TextRun({ text: act.priority, size: 18, bold: true, color: priorityColor })], alignment: AlignmentType.CENTER })], shading: { fill: bg } }),
-              new TableCell({ children: [new Paragraph({ children: [new TextRun({ text: act.deadline, size: 18 })], alignment: AlignmentType.CENTER })], shading: { fill: bg } }),
-            ],
-          }));
-        });
-      } else {
-        actionRows.push(new TableRow({
-          children: [
-            new TableCell({ children: [new Paragraph({ text: "No action items recorded." })] }),
-            new TableCell({ children: [new Paragraph({ text: "-" })] }),
-            new TableCell({ children: [new Paragraph({ text: "-" })] }),
-            new TableCell({ children: [new Paragraph({ text: "-" })] }),
-          ],
-        }));
-      }
-      docChildren.push(new Table({
-        rows: actionRows,
-        width: { size: 100, type: WidthType.PERCENTAGE },
-        borders: {
-          top: { style: BorderStyle.SINGLE, size: 3, color: "E2E8F0" },
-          bottom: { style: BorderStyle.SINGLE, size: 3, color: "E2E8F0" },
-          left: { style: BorderStyle.SINGLE, size: 3, color: "E2E8F0" },
-          right: { style: BorderStyle.SINGLE, size: 3, color: "E2E8F0" },
-          insideHorizontal: { style: BorderStyle.SINGLE, size: 1, color: "E2E8F0" },
-          insideVertical: { style: BorderStyle.SINGLE, size: 1, color: "E2E8F0" },
-        },
-      }));
-      docChildren.push(new Paragraph({ text: "", spacing: { after: 240 } }));
-
-      // ═══ SLIDES ═══
-      if (activeSlides.length > 0) {
-        docChildren.push(addHeading("6. Captured Slide Frames", HeadingLevel.HEADING_1));
-        for (const s of activeSlides) {
-          const imageBuffer = getImageBuffer(s);
-          if (imageBuffer) {
-            try {
-              docChildren.push(new Paragraph({
-                children: [new ImageRun({ data: imageBuffer, transformation: { width: 460, height: 259 }, type: "png" })],
-                alignment: AlignmentType.CENTER, spacing: { after: 60 },
-              }));
-            } catch (e) {
-              docChildren.push(new Paragraph({ text: "[Image rendering error]", spacing: { after: 60 } }));
-            }
-          }
-          docChildren.push(new Paragraph({
-            children: [
-              new TextRun({ text: `${s.caption}`, italics: true, size: 18, color: "64748B" }),
-              new TextRun({ text: ` — ${Math.floor(s.timestamp / 60)}:${(s.timestamp % 60).toString().padStart(2, "0")}`, size: 16, color: "94A3B8" }),
-            ],
-            alignment: AlignmentType.CENTER, spacing: { after: 200 },
-          }));
+      // If we have segments, run through Gemini to get detailed AI summary with timeline blocks
+      let finalSummary = summary;
+      if (summary.segments && summary.segments.length > 0) {
+        try {
+          finalSummary = await generateDetailedDocxSummary(summary.segments, summary.title || "Meeting", "audio/video input");
+          // Preserve slides array for inline image embedding in chronological summary
+          finalSummary.slides = summary.slides || [];
+        } catch (e) {
+          console.error("Failed to generate detailed docx schema via Gemini, falling back to original schema", e);
         }
       }
 
-      // Build document with footer
-      const doc = new Document({
-        sections: [{
-          properties: {},
-          headers: {},
-          footers: {
-            default: new Footer({
-              children: [new Paragraph({
-                children: [
-                  new TextRun({ text: "AI Meeting Summarizer Report", size: 14, color: "94A3B8" }),
-                  new TextRun({ text: "    •    Page ", size: 14, color: "94A3B8" }),
-                  new TextRun({ children: [PageNumber.CURRENT], size: 14, color: "94A3B8" }),
-                ],
-                alignment: AlignmentType.CENTER,
-              })],
-            }),
-          },
-          children: docChildren,
-        }],
-      });
-
-      const buffer = await Packer.toBuffer(doc);
+      const buffer = await compileMeetingDocx(finalSummary, excludedSlideIds);
       res.setHeader("Content-Type", "application/vnd.openxmlformats-officedocument.wordprocessingml.document");
       res.setHeader("Content-Disposition", "attachment; filename=Meeting_Summary_Report.docx");
       res.send(buffer);
@@ -795,6 +553,7 @@ The conversational session logged ${totalConversations} statements from particip
       res.status(500).json({ error: docxError.message || "Failed to generate Word document." });
     }
   });
+
 
   // Serve Vite app in dev mode, static files in production mode
   if (process.env.NODE_ENV !== "production") {
