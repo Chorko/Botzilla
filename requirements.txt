@@ -1,8 +1,6 @@
-numpy<2
-torch
-torchvision
-torchaudio
-requests
-opencv-python
-python-docx
-whisperx @ git+https://github.com/m-bain/whisperx.git
+fastapi
+uvicorn
+numpy
+Pillow
+easyocr
+rapidfuzz

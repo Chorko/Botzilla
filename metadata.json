@@ -1,6 +1,0 @@
-{
-  "name": "AI Meeting Summarizer",
-  "description": "An interactive full-stack dashboard to parse meetings, transcribe Hinglish, resolve speaker names, and generate structured Word documents with smart visual slide captures.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}

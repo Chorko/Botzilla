@@ -132,6 +132,12 @@
     <div class="dashboard">
         <h2>Botzilla Smart Visual Ingestion Pipeline</h2>
 
+        <div class="upload-container" style="margin-bottom: 25px; text-align: left; display: inline-block; width: 100%; max-width: 320px;">
+            <span class="select-label">Upload New Video:</span>
+            <input type="file" id="videoUpload" class="select-input" accept="video/mp4,video/x-m4v,video/*" style="margin-bottom: 10px;" />
+            <button class="btn" id="uploadBtn" style="width: 100%; margin-bottom: 0;">Upload Video</button>
+        </div>
+
         <div class="select-container">
             <span class="select-label">Select Video Asset:</span>
             <select class="select-input" id="videoSelect">
@@ -157,9 +163,46 @@
         const trackBar = document.getElementById('trackBar');
         const hoverBox = document.getElementById('hoverBox');
         const videoSelect = document.getElementById('videoSelect');
+        const videoUpload = document.getElementById('videoUpload');
+        const uploadBtn = document.getElementById('uploadBtn');
 
         let vttMap = [];
         let selectedVideo = "";
+
+        uploadBtn.addEventListener('click', async () => {
+            const file = videoUpload.files[0];
+            if (!file) {
+                statusMessage.innerHTML = "❌ Please select a video file to upload.";
+                return;
+            }
+            statusMessage.innerHTML = "⚡ Uploading video... please wait.";
+            uploadBtn.disabled = true;
+            
+            const formData = new FormData();
+            formData.append("file", file);
+            
+            try {
+                const res = await fetch('/upload', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                if (res.ok) {
+                    statusMessage.innerHTML = "✅ Video uploaded successfully!";
+                    videoUpload.value = ""; 
+                    await loadVideos(); 
+                    videoSelect.value = file.name;
+                    selectedVideo = file.name;
+                    onVideoChanged();
+                } else {
+                    statusMessage.innerHTML = "❌ Upload failed.";
+                }
+            } catch (err) {
+                statusMessage.innerHTML = "❌ Upload error: " + err.message;
+            } finally {
+                uploadBtn.disabled = false;
+            }
+        });
 
         async function loadVideos() {
             try {

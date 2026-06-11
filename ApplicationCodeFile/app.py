@@ -177,7 +177,7 @@
 
 # # Expose the current directory so the browser can read video, sprite, and VTT files natively
 # app.mount("/", StaticFiles(directory="."), name="static")
-from fastapi import FastAPI, BackgroundTasks
+from fastapi import FastAPI, BackgroundTasks, UploadFile, File
 from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 import subprocess
@@ -338,6 +338,18 @@ def serve_video(filename: str):
     if os.path.exists(video_path):
         return FileResponse(video_path)
     return JSONResponse(status_code=404, content={"message": "Video not found"})
+
+@app.post("/upload")
+async def upload_video(file: UploadFile = File(...)):
+    video_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "SourceVedio"))
+    if not os.path.exists(video_dir):
+        os.makedirs(video_dir)
+    
+    file_path = os.path.join(video_dir, file.filename)
+    with open(file_path, "wb") as buffer:
+        shutil.copyfileobj(file.file, buffer)
+        
+    return {"status": "success", "filename": file.filename}
 
 @app.post("/process-video/{filename}")
 def trigger_pipeline(filename: str, background_tasks: BackgroundTasks):
