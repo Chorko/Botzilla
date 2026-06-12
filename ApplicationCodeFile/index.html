@@ -266,7 +266,7 @@
             } else if (data.status === "complete") {
                 statusMessage.innerHTML = `✅ Processing Complete! Hover along the timeline track bar below.`;
                 startBtn.style.display = "none";
-                initializePlayer(selectedVideo);
+                initializePlayer(selectedVideo, data.vtt_url, data.grid_url);
             } else {
                 statusMessage.innerHTML = `System Status: Ready to process ${selectedVideo}`;
                 startBtn.style.display = "inline-block";
@@ -275,15 +275,15 @@
             }
         }
 
-        async function initializePlayer(filename) {
+        async function initializePlayer(filename, vttUrl, gridUrl) {
             const videoName = filename.substring(0, filename.lastIndexOf('.')) || filename;
             playerZone.style.display = "block";
 
-            const response = await fetch(`${videoName}_timeline_map.vtt?t=${Date.now()}`);
+            const response = await fetch(vttUrl);
             const text = await response.text();
 
-            // 🌟 CHANGE 2: Request the high-fidelity .png grid instead of the old .jpg
-            hoverBox.style.backgroundImage = `url('${videoName}_grid.png?t=${Date.now()}')`;
+            // 🌟 CHANGE 2: Request the high-fidelity .png grid from Supabase URL
+            hoverBox.style.backgroundImage = `url('${gridUrl}')`;
 
             vttMap = [];
             const cleanText = text.replace(/\r\n/g, '\n').replace(/\r/g, '\n').trim();

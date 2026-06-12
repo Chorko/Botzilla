@@ -8,15 +8,16 @@ from rapidfuzz import fuzz
 
 def extract_grid_text(video_base_name: str):
     base_dir = os.path.dirname(os.path.abspath(__file__))
+    output_dir = os.path.abspath(os.path.join(base_dir, "..", "output", f"{video_base_name}_output"))
     
     # 🌟 FIX 1: Auto-detect whether the file is a .png or a .jpg grid
-    grid_path = os.path.join(base_dir, f"{video_base_name}_grid.png")
+    grid_path = os.path.join(output_dir, f"{video_base_name}_grid.png")
     if not os.path.exists(grid_path):
-        grid_path = os.path.join(base_dir, f"{video_base_name}_grid.jpg")
+        grid_path = os.path.join(output_dir, f"{video_base_name}_grid.jpg")
         
-    vtt_path = os.path.join(base_dir, f"{video_base_name}_timeline_map.vtt")
-    output_json = os.path.join(base_dir, f"{video_base_name}_text_manifest.json")
-    output_md = os.path.join(base_dir, f"{video_base_name}_ocr_transcript.md")
+    vtt_path = os.path.join(output_dir, f"{video_base_name}_timeline_map.vtt")
+    output_json = os.path.join(output_dir, f"{video_base_name}_text_manifest.json")
+    output_md = os.path.join(output_dir, f"{video_base_name}_ocr_transcript.md")
 
     # Verify files exist
     if not os.path.exists(grid_path):
