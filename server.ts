@@ -131,56 +131,57 @@ async function startServer() {
       // THE HIJACK: If it's audio only, run MY G's custom engine
       // ---------------------------------------------------------
       if (mode === 'AUDIO_ONLY' && audioFile) {
-          console.log(`[Express] Hijacking route. Running custom Groq Audio Engine...`);
+          console.log(`[Express] Hijacking route. Running dynamic routing Audio Engine...`);
           
-          const args = [
+          const args= [
             'audio_engine.py',
             audioFile.path,
             process.env.HF_TOKEN || '',
             process.env.GROQ_API_KEY || '',
+            process.env.GEMINI_API_KEY || '',
             taskOutputDir
           ];
           
-          pythonProcess = spawn('python', args);
+          pythonProcess= spawn('python', args);
           
           pythonProcess.stdout.on('data', (chunk) => {
-            const lines = chunk.toString().split('\n');
-            for (const line of lines) {
+            const arr= chunk.toString().split('\n');
+            for (const line of arr) {
                 console.log(`[Python] ${line.trim()}`);
                 if (line.includes('[STATUS]')) {
-                    const parts = line.split('[STATUS]')[1].trim().split(/\s+/);
-                    if (parts.length >= 2) {
-                        const stage = parts[0];
-                        const progress = parseInt(parts[1], 10);
-                        const message = parts.slice(2).join(' ');
-                        const task = tasksMap.get(taskId);
+                    const res_= line.split('[STATUS]')[ 1 ].trim().split(/\s+/);
+                    if (res_.length >= 2) {
+                        const stage= res_[ 0 ];
+                        const progress= parseInt(res_[ 1 ], 10);
+                        const message= res_.slice(2).join(' ');
+                        const task= tasksMap.get(taskId);
                         if (task) {
-                            task.stage = stage;
-                            task.progress = progress;
-                            task.message = message;
+                            task.stage= stage;
+                            task.progress= progress;
+                            task.message= message;
                             sendSSE(taskId, { stage, progress, message });
                         }
                     }
                 } else if (line.includes('[SUCCESS]')) {
-                    const docPath = line.replace('[SUCCESS]', '').trim();
-                    const task = tasksMap.get(taskId);
+                    const res_= line.replace('[SUCCESS]', '').trim();
+                    const task= tasksMap.get(taskId);
                     if (task) {
                         try {
-                            const jsonPath = path.join(taskOutputDir, 'report.json');
-                            const reportContent = fs.readFileSync(jsonPath, 'utf-8');
-                            const reportData = JSON.parse(reportContent);
-                            reportData.pdf_file = docPath; 
+                            const new_= path.join(taskOutputDir, 'report.json');
+                            const val_= fs.readFileSync(new_, 'utf-8');
+                            const data_= JSON.parse(val_);
+                            data_.pdf_file= res_; 
                             
-                            task.stage = 'completed';
-                            task.progress = 100;
-                            task.message = 'Analysis completed successfully!';
-                            task.data = reportData;
+                            task.stage= 'completed';
+                            task.progress= 100;
+                            task.message= 'Analysis completed successfully!';
+                            task.data= data_;
                             
                             sendSSE(taskId, {
                                 stage: 'completed',
                                 progress: 100,
                                 message: 'Analysis completed successfully!',
-                                data: reportData
+                                data: data_
                             });
                         } catch(e) {
                             console.error("[Express] Error reading report.json", e);
@@ -189,7 +190,7 @@ async function startServer() {
                 }
             }
           });
-      } 
+      }
       // ---------------------------------------------------------
       // THE FALLBACK: If it's a video, run the friend's script
       // ---------------------------------------------------------
@@ -775,10 +776,11 @@ The conversational session logged ${totalConversations} statements from particip
   //_---------------------------------------------------------------------
 
   app.post("/api/process-audio", upload.single('audio'), (req: Request, res: Response) => {
+    
     const audioFilePath= req.file?.path || "";
     const hfToken= process.env.HF_TOKEN || "";
     const groqKey= process.env.GROQ_API_KEY || "";
-    
+    const geminiKey= process.env.GEMINI_API_KEY || "";
     res.setHeader('Content-Type', 'text/event-stream');
     res.setHeader('Cache-Control', 'no-cache');
     res.setHeader('Connection', 'keep-alive');
